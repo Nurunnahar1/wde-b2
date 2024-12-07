@@ -1,0 +1,13 @@
+ 
+ @import 'mixin';
+ @import 'variable';
+ 
+ 
+ h2{
+    color: $color1;
+ }
+ ul{
+    li{
+        @include ulli;
+    }
+ }
