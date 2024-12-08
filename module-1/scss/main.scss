@@ -3,11 +3,29 @@
  @import 'variable';
  
  
- h2{
-    color: $color1;
- }
- ul{
-    li{
-        @include ulli;
+//  h2{
+//     color: $color1;
+//  }
+//  ul{
+//     li{
+//         @include ulli;
+//     }
+//  }
+.mnservices{
+    &__thumb{
+       img{
+        width: 100%;
+       }
     }
- }
+    &__text{
+     
+        p{
+            font-size: 15px;
+            color: gray;
+        }
+    }
+    &__title{
+          color: red;
+            font-size: 30px;
+    }
+}

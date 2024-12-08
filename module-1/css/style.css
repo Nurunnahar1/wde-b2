@@ -1,10 +1,13 @@
-h2 {
-  color: red;
+.mnservices__thumb img {
+  width: 100%;
 }
-
-ul li {
-  list-style: none;
-  padding: 5px 10px;
+.mnservices__text p {
+  font-size: 15px;
+  color: gray;
+}
+.mnservices__title {
+  color: red;
+  font-size: 30px;
 }
 
 /*# sourceMappingURL=style.css.map */
