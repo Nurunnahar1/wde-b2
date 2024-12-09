@@ -140,3 +140,21 @@
   bottom: 0px;
   right:  0px;
 }
+
+
+.menu ul li {
+  display: inline-block;
+  list-style: none;
+  margin-right: 5px;
+}
+
+ 
+
+.menu ul li a {
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  color: #000;
+  padding: 20px 25px;
+  font-weight: bold;
+}
