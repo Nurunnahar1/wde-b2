@@ -125,10 +125,11 @@
 /*----------------------------------------*/
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Federo&display=swap");
 :root {
-  --tp-theme-color: red;
-  --tp-theme-sec-color: blue;
-  --tp-black: black;
-  --tp-white: white;
+  --tp-theme-color:#0057FC ;
+  --tp-theme-sec-color: #E5CF00;
+  --tp-heading-color: #0A0E1A;
+  --tp-body-color: #57595C;
+  --tp-theme-nblue: #001C52;
   --tp-grey-color: #f6f6f6;
   --tp-grey-color-2: #f6f6f6;
   --tp-grey-color-3: #f6f6f6;
@@ -154,7 +155,7 @@ body {
   font-size: 17px;
   font-weight: normal;
   color: var(--tp-black);
-  line-height: 26px;
+  line-height: 28px;
 }
 
 a {
@@ -167,7 +168,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: var(--tp-fonts-muli);
+  font-family: var(--tp-fonts-heading);
   color: var(--tp-theme-sec-color);
   margin-top: 0px;
   font-weight: 700;
