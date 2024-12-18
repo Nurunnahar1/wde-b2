@@ -3575,8 +3575,19 @@ textarea {
   padding-right: 100px;
 }
 
-body {
-  background-color: red;
+.tp-transparent-header {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+
+.tp-main-menu ul li a {
+  font-family: var(--tp-fonts-body);
+  color: #fff;
+  font-size: 18px;
+  padding: 36px 0;
+  display: inline-block;
 }
 
 /*# sourceMappingURL=style.css.map */
