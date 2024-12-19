@@ -299,8 +299,8 @@ textarea {
 }
 
 *::-moz-selection {
-  background: var(--tp-common-black);
-  color: var(--tp-common-white);
+  background: #333;
+  color: #fff;
   text-shadow: none;
 }
 
@@ -3582,12 +3582,61 @@ textarea {
   top: 0;
 }
 
+.tp-main-menu ul li {
+  display: inline-block;
+  margin-right: 42px;
+  position: relative;
+}
 .tp-main-menu ul li a {
   font-family: var(--tp-fonts-body);
   color: #fff;
   font-size: 18px;
   padding: 36px 0;
   display: inline-block;
+}
+.tp-main-menu ul li .sub-menu {
+  position: absolute;
+  width: 213px;
+  left: 0;
+  top: 100%;
+  height: auto;
+  background: #fff;
+  padding: 14px 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+}
+.tp-main-menu ul li .sub-menu li {
+  margin-right: 0;
+  display: block;
+}
+.tp-main-menu ul li .sub-menu li a {
+  color: #000;
+  display: block;
+  padding: 5px 25px;
+  font-size: 17px;
+}
+.tp-main-menu ul li .sub-menu li .sub-menu {
+  left: 100%;
+  top: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+}
+.tp-main-menu ul li .sub-menu li:hover > a {
+  color: #0057fc;
+}
+.tp-main-menu ul li .sub-menu li:hover .sub-menu {
+  opacity: 1;
+  visibility: visible;
+  top: 0;
+}
+.tp-main-menu ul li:hover a {
+  color: var(--tp-theme-sec-color);
+}
+.tp-main-menu ul li:hover .sub-menu {
+  opacity: 1;
+  visibility: visible;
 }
 
 /*# sourceMappingURL=style.css.map */

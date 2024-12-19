@@ -296,8 +296,8 @@ textarea{
 }
 
 *::-moz-selection {
-	background: var(--tp-common-black);
-	color: var(--tp-common-white);
+	background: #333;
+	color: #fff;
 	text-shadow: none;
 }
 *::selection {
