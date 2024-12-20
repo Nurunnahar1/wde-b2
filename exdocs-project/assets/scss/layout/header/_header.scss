@@ -72,3 +72,29 @@
     }
   }
 }
+
+.tp-header {
+  &-bar {
+    & button {
+      background: #23252d;
+      padding: 35px 22px;
+    }
+  }
+  &-cta {
+    &-text span {
+      color: #b1b4ba;
+      font-size: 15px;
+      display: block;
+      margin-bottom: 10px;
+      line-height: 1;
+    }
+  }
+}
+
+.tp-header-cta-text span {
+}
+.tp-header-cta-text h4 {
+  color: #ffffff;
+  font-size: 18px;
+  margin: 0;
+}
