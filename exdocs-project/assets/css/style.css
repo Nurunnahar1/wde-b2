@@ -3603,6 +3603,7 @@ textarea {
   left: 0;
   right: 0;
   top: 0;
+  z-index: 2;
 }
 
 .tp-main-menu ul li {
@@ -3712,5 +3713,59 @@ textarea {
 
 /* creative agency */
 /* BTN */
+.tp-hero-info {
+  font-weight: 500;
+  font-size: 15px;
+  text-transform: uppercase;
+  color: #b1b4ba;
+  display: flex;
+  width: 100px;
+  height: 100%;
+  justify-content: space-around;
+  flex-direction: column;
+  top: 100px;
+  position: absolute;
+  border-right: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.tp-hero-social {
+  transform: rotate(-90deg);
+  display: block ruby;
+}
+
+.tp-hero-info-text {
+  transform: rotate(-90deg);
+  display: block ruby;
+}
+
+.tp-hero-shape-5.p-absolute {
+  right: 300px;
+  bottom: 140px;
+  z-index: 1;
+}
+
+.tp-hero-shape-1.p-absolute {
+  top: 417px;
+  left: -45px;
+  z-index: 1;
+}
+
+.tp-hero-shape-4.p-absolute {
+  right: 190px;
+  top: 205px;
+  z-index: 1;
+}
+
+.tp-hero-shape-3.p-absolute {
+  right: 37%;
+  top: 33%;
+  z-index: 1;
+}
+
+.tp-hero-shape-2.p-absolute {
+  left: 385px;
+  top: 314px;
+  z-index: 1;
+}
 
 /*# sourceMappingURL=style.css.map */
