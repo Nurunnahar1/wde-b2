@@ -162,8 +162,11 @@
   display: inline-block;
 }
 
-.tp-about-section-title {
+.tp-section-title {
   font-size: 60px;
+}
+.tp-section-title-white {
+  color: #fff;
 }
 
 * {
@@ -395,6 +398,10 @@ textarea {
 
 .tp-black-bg {
   background-color: var(--tp-common-black);
+}
+
+.tp-blue-bg {
+  background-color: var(--tp-theme-color);
 }
 
 /*--
@@ -6998,6 +7005,10 @@ textarea {
 .tp-about-video h4 {
   color: #57595c;
   font-size: 30px;
+}
+
+.tp-newsletter-bg {
+  padding: 80px;
 }
 
 /*# sourceMappingURL=style.css.map */

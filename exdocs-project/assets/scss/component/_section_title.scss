@@ -1,5 +1,8 @@
 @use "../utils" as *;
 
-.tp-about-section-title {
+.tp-section-title {
   font-size: 60px;
+  &-white{
+    color: #fff;
+  }
 }
