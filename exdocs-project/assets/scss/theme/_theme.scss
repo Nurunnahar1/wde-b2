@@ -200,8 +200,8 @@ p {
   margin-bottom: 15px;
   line-height: 26px;
 }
-b{
-	color: var(--tp-heading-color);
+b {
+  color: var(--tp-heading-color);
 }
 
 a,
@@ -264,19 +264,23 @@ input[type="password"],
 input[type="url"],
 textarea {
   outline: none;
-  background-color: #fff;
   height: 56px;
   width: 100%;
   line-height: 56px;
   font-size: 14px;
   color: var(--tp-common-black);
-  padding-left: 26px;
-  padding-right: 26px;
-  border: 1px solid #e0e2e3;
+  background: transparent;
+  border: 0;
+  border-bottom-width: 0px;
+  border-bottom-style: none;
+  border-bottom-color: currentcolor;
+  border-bottom: 1px solid #57595c;
+  text-transform: uppercase;
+  font-weight: 500;
 
-  // @include tp-placeholder{
-  // 	color: #95999D;
-  // }
+  @include tp-placeholder{
+  	color: #57595c;
+  }
 
   &:focus {
     border-color: var(--tp-common-black);

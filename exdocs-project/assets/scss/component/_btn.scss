@@ -1,20 +1,23 @@
-@use '../utils' as *;
+@use "../utils" as *;
 
 .tp-btn {
-	padding: 19px 45px;
-	font-family: var(--tp-fonts-heading);
-	background: var(--tp-theme-color);
-	border-radius: 5px;
-	color: var(--tp-white-color);
-	font-size: 18px;
-	display: inline-block;
+  padding: 16px 45px;
+  font-family: var(--tp-fonts-heading);
+  background: var(--tp-theme-color);
+  border-radius: 5px;
+  color: var(--tp-white-color);
+  font-size: 18px;
+  display: inline-block;
 }
 .tp-btn-sec {
-	padding: 22px 48px;
-	font-family: var(--tp-fonts-heading);
-	background: var(--tp-theme-sec-color);
-	border-radius: 5px;
-	color: var(--tp-heading-color);
-	font-size: 18px;
-	display: inline-block;
+  padding: 16px 45px;
+  font-family: var(--tp-fonts-heading);
+  background: var(--tp-theme-sec-color);
+  border-radius: 5px;
+  color: var(--tp-heading-color);
+  font-size: 18px;
+  display: inline-block;
+  &-lg {
+    padding: 19px 48px;
+  }
 }

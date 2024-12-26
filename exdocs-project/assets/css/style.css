@@ -143,7 +143,7 @@
 }
 
 .tp-btn {
-  padding: 19px 45px;
+  padding: 16px 45px;
   font-family: var(--tp-fonts-heading);
   background: var(--tp-theme-color);
   border-radius: 5px;
@@ -153,13 +153,16 @@
 }
 
 .tp-btn-sec {
-  padding: 22px 48px;
+  padding: 16px 45px;
   font-family: var(--tp-fonts-heading);
   background: var(--tp-theme-sec-color);
   border-radius: 5px;
   color: var(--tp-heading-color);
   font-size: 18px;
   display: inline-block;
+}
+.tp-btn-sec-lg {
+  padding: 19px 48px;
 }
 
 .tp-section-title {
@@ -295,15 +298,55 @@ input[type=password],
 input[type=url],
 textarea {
   outline: none;
-  background-color: #fff;
   height: 56px;
   width: 100%;
   line-height: 56px;
   font-size: 14px;
   color: var(--tp-common-black);
-  padding-left: 26px;
-  padding-right: 26px;
-  border: 1px solid #e0e2e3;
+  background: transparent;
+  border: 0;
+  border-bottom-width: 0px;
+  border-bottom-style: none;
+  border-bottom-color: currentcolor;
+  border-bottom: 1px solid #57595c;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+input[type=text]::-webkit-input-placeholder,
+input[type=email]::-webkit-input-placeholder,
+input[type=tel]::-webkit-input-placeholder,
+input[type=number]::-webkit-input-placeholder,
+input[type=password]::-webkit-input-placeholder,
+input[type=url]::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: #57595c;
+}
+input[type=text]:-moz-placeholder,
+input[type=email]:-moz-placeholder,
+input[type=tel]:-moz-placeholder,
+input[type=number]:-moz-placeholder,
+input[type=password]:-moz-placeholder,
+input[type=url]:-moz-placeholder,
+textarea:-moz-placeholder {
+  color: #57595c;
+}
+input[type=text]::-moz-placeholder,
+input[type=email]::-moz-placeholder,
+input[type=tel]::-moz-placeholder,
+input[type=number]::-moz-placeholder,
+input[type=password]::-moz-placeholder,
+input[type=url]::-moz-placeholder,
+textarea::-moz-placeholder {
+  color: #57595c;
+}
+input[type=text]:-ms-input-placeholder,
+input[type=email]:-ms-input-placeholder,
+input[type=tel]:-ms-input-placeholder,
+input[type=number]:-ms-input-placeholder,
+input[type=password]:-ms-input-placeholder,
+input[type=url]:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+  color: #57595c;
 }
 input[type=text]:focus,
 input[type=email]:focus,
@@ -7009,6 +7052,7 @@ textarea {
 
 .tp-newsletter-bg {
   padding: 80px;
+  border-radius: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,4 +1,8 @@
 @use "../../utils" as *;
-.tp-newsletter-bg {
-  padding: 80px;
+
+.tp-newsletter {
+  &-bg {
+    padding: 80px;
+    border-radius: 20px;
+  }
 }
