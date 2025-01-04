@@ -132,7 +132,7 @@
   --tp-body-color: #57595c;
   --tp-theme-nblue: #001c52;
   --tp-white-color: #ffffff;
-  --tp-grey-color-2: #f6f6f6;
+  --tp-spring-color-1: #FBF6EF;
   --tp-grey-color-3: #f6f6f6;
   --tp-grey-color-4: #f6f6f6;
 }
@@ -411,6 +411,10 @@ textarea {
 
 .clear {
   clear: both;
+}
+
+.br-5 {
+  border-radius: 5px;
 }
 
 .br-24 {
@@ -4276,6 +4280,7 @@ textarea {
   margin-right: -1px;
   border: 1px solid #57595c;
   padding: 40px;
+  transition: 0.3s;
 }
 .tpservices__text p {
   font-size: 16px;
@@ -4301,15 +4306,23 @@ textarea {
   border-radius: 20px;
   transform: translateY(-2px);
 }
+.tpservices:hover {
+  background-color: var(--tp-spring-color-1);
+}
+.tpservices:hover .tp-sv-btn {
+  background-color: var(--tp-theme-color);
+  color: #fff;
+}
 
 .tp-sv-btn {
-  background: #fbf6ef;
+  background: var(--tp-spring-color-1);
   font-family: var(--tp-fonts-heading);
   padding: 10px 25px;
   font-size: 18px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  transition: 0.3s;
 }
 .tp-sv-btn i {
   transform: rotate(-45deg);
