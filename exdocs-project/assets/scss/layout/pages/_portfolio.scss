@@ -1,1 +1,25 @@
-@use '../../utils' as *;
+@use "../../utils" as *;
+
+.tp-project {
+  &-tab {
+    & button {
+      color: #fff;
+      font-size: 100px;
+      font-family: var(--tp-fonts-heading);
+      line-height: 1.2;
+      border-bottom: 1px solid #2f446b;
+      border-bottom-color: rgb(47, 68, 107);
+      padding: 17px 39px 17px 77px;
+      transition: 0.3s;
+      &.active {
+        color: var(--tp-theme-sec-color);
+        border-color: var(--tp-theme-sec-color);
+      }
+    }
+    &-thumb {
+      & img {
+        border-radius: 20px;
+      }
+    }
+  }
+}

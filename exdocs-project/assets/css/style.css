@@ -151,7 +151,17 @@
   font-size: 18px;
   display: inline-block;
 }
-
+.tp-btn-circle {
+  font-family: var(--tp-fonts-heading);
+  font-size: 60px;
+  color: #fff;
+  opacity: 0.3;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  padding: 48px 75px;
+  border-radius: 100%;
+  line-height: 1;
+  display: inline-block;
+}
 .tp-btn-sec {
   padding: 16px 45px;
   font-family: var(--tp-fonts-heading);
@@ -453,6 +463,10 @@ textarea {
 
 .tp-blue-bg {
   background-color: var(--tp-theme-color);
+}
+
+.tp-nblue-bg {
+  background-color: var(--tp-theme-nblue);
 }
 
 /*--
@@ -4274,6 +4288,24 @@ textarea {
   top: 47%;
   left: 35%;
   z-index: 1;
+}
+
+.tp-project-tab button {
+  color: #fff;
+  font-size: 100px;
+  font-family: var(--tp-fonts-heading);
+  line-height: 1.2;
+  border-bottom: 1px solid #2f446b;
+  border-bottom-color: rgb(47, 68, 107);
+  padding: 17px 39px 17px 77px;
+  transition: 0.3s;
+}
+.tp-project-tab button.active {
+  color: var(--tp-theme-sec-color);
+  border-color: var(--tp-theme-sec-color);
+}
+.tp-project-tab-thumb img {
+  border-radius: 20px;
 }
 
 .tpservices {
