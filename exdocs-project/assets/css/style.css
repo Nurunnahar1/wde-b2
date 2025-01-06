@@ -4360,6 +4360,34 @@ textarea {
   transform: rotate(-45deg);
 }
 
+.tp-testimonial-desc {
+  font-size: 100px;
+}
+.tp-testimonial-name {
+  font-size: 30px;
+  margin-bottom: 8px;
+}
+.tp-testimonial-designation {
+  font-size: 17px;
+  color: #57595c;
+  margin-left: 89px;
+}
+.tp-testimonial-designation span {
+  width: 60px;
+  height: 1px;
+  background: #57595c;
+  display: inline-block;
+  transform: translateY(-6px);
+  margin-right: 5px;
+}
+.tp-testimonial-shape {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 75px;
+  z-index: -1;
+}
+
 .tp-newsletter-margin {
   margin-top: -110px;
 }
