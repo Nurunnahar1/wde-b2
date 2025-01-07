@@ -4388,6 +4388,25 @@ textarea {
   z-index: -1;
 }
 
+.tp-swiper-testi-btn {
+  position: absolute;
+  left: -100px;
+  top: 34%;
+}
+.tp-swiper-testi-btn-next {
+  left: auto;
+  right: -100px;
+}
+
+.tp-testimonial-shape-thumb-1 {
+  top: 21%;
+  left: 0;
+}
+.tp-testimonial-shape-thumb-1-2 {
+  top: 5%;
+  right: 0;
+}
+
 .tp-newsletter-margin {
   margin-top: -110px;
 }
