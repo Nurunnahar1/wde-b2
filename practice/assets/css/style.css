@@ -4375,45 +4375,6 @@ textarea {
   transform: rotate(-45deg);
 }
 
-.tpteam__thumb img {
-  border-radius: 15px;
-}
-.tpteam__info span {
-  color: var(--tp-body-color);
-  font-size: 17px;
-}
-.tpteam__info span i {
-  width: 60px;
-  height: 1px;
-  background-color: #d6d6d1;
-  display: inline-block;
-  margin-right: 5px;
-  transform: translateY(-5px);
-  margin-left: 50px;
-}
-.tpteam__title {
-  font-size: 30px;
-  margin-bottom: 5px;
-}
-.tpteam__social a {
-  font-size: 25px;
-  color: #0a0e1a;
-  margin-right: 15px;
-}
-
-.tp-swiper-team-btn {
-  display: inline-block;
-}
-
-.tp-team-nav span {
-  height: 12px;
-  width: 12px;
-  display: inline-block;
-  background-color: #dbdbdb;
-  border-radius: 50%;
-  margin: 0 10px;
-}
-
 .tp-testimonial-desc {
   font-size: 100px;
 }

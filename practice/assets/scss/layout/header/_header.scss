@@ -1,0 +1,107 @@
+@use "../../utils" as *;
+.tp-transparent-header {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 2;
+}
+.tp-main-menu {
+  & ul {
+    & li {
+      display: inline-block;
+      margin-right: 42px;
+      position: relative;
+
+      & a {
+        font-family: var(--tp-fonts-body);
+        color: #fff;
+        font-size: 18px;
+        padding: 36px 0;
+        display: inline-block;
+      }
+
+      & .sub-menu {
+        position: absolute;
+        width: 213px;
+        left: 0;
+        top: 100%;
+        height: auto;
+        background: #fff;
+        padding: 14px 0;
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.3s;
+
+        & li {
+          margin-right: 0;
+          display: block;
+          & a {
+            color: #000;
+            display: block;
+            padding: 5px 25px;
+            font-size: 17px;
+          }
+          & .sub-menu {
+            left: 100%;
+            top: 0;
+            opacity: 0;
+            visibility: hidden;
+            transition: 0.3s;
+          }
+          &:hover {
+            & > a {
+              color: #0057fc;
+            }
+            & .sub-menu {
+              opacity: 1;
+              visibility: visible;
+              top: 0;
+            }
+          }
+        }
+      }
+      &:hover {
+        & a {
+          color: var(--tp-theme-sec-color);
+        }
+        & .sub-menu {
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+    }
+  }
+}
+
+.tp-header {
+  &-border {
+    border-bottom: 1px solid rgb(255, 255, 255, 0.15);
+  }
+  &-search {
+    margin-right: 40px;
+  }
+  &-bar {
+    & button {
+      background: #23252d;
+      padding: 35px 22px;
+    }
+  }
+  &-cta {
+    padding: 25px 40px;
+    border-left: 1px solid rgb(255, 255, 255, 0.15);
+
+    &-text span {
+      color: #b1b4ba;
+      font-size: 15px;
+      display: block;
+      margin-bottom: 10px;
+      line-height: 1;
+    }
+    &-text h4 {
+      color: #ffffff;
+      font-size: 18px;
+      margin: 0;
+    }
+  }
+}

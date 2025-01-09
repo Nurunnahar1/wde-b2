@@ -1,0 +1,61 @@
+@use "../../utils" as *;
+
+.tpservices {
+  margin-right: -1px;
+  border: 1px solid #57595c;
+  padding: 40px;
+  transition: .3s;
+  &__text {
+    & p {
+      font-size: 16px;
+    }
+  }
+
+  &__title {
+    margin: 34px 0 20px 0;
+    font-size: 30px;
+  }
+  &__list {
+    & ul {
+      list-style: none;
+      & li {
+        margin-bottom: 10px;
+        color: #57595c;
+        &::before {
+          content: "";
+          height: 8px;
+          width: 8px;
+          background-color: #57595c;
+          margin-right: 10px;
+          display: inline-block;
+          border-radius: 20px;
+          transform: translateY(-2px);
+        }
+      }
+    }
+  }
+  &:hover {
+    background-color: var(--tp-spring-color-1);
+    & .tp-sv-btn{
+        background-color: var(--tp-theme-color);
+        color: #fff;
+    }
+  }
+}
+.tp-sv-btn {
+  background: var(--tp-spring-color-1);
+  font-family: var(--tp-fonts-heading);
+  padding: 10px 25px;
+  font-size: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+    transition: .3s;
+
+  & i {
+    transform: rotate(-45deg);
+  }
+ 
+}
+
+

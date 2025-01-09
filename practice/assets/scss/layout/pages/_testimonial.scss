@@ -1,0 +1,50 @@
+@use "../../utils" as *;
+
+.tp-testimonial {
+  &-desc {
+    font-size: 100px;
+  }
+  &-name {
+    font-size: 30px;
+    margin-bottom: 8px;
+  }
+  &-designation {
+    font-size: 17px;
+    color: #57595c;
+    margin-left: 89px;
+    & span {
+      width: 60px;
+      height: 1px;
+      background: #57595c;
+      display: inline-block;
+      transform: translateY(-6px);
+      margin-right: 5px;
+    }
+  }
+  &-shape {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 75px;
+    z-index: -1;
+  }
+}
+.tp-swiper-testi-btn {
+  position: absolute;
+  left: -100px;
+  top: 34%;
+  &-next {
+    left: auto;
+    right: -100px;
+  }
+}
+.tp-testimonial-shape-thumb {
+  &-1 {
+    top: 21%;
+    left: 0;
+    &-2 {
+      top: 5%;
+      right: 0;
+    }
+  }
+}
