@@ -204,16 +204,7 @@ b {
   color: var(--tp-heading-color);
 }
 
-a,
-button,
-p,
-input,
-select,
-textarea,
-li,
-.transition-3 {
-  // @extend %tp-transition-common;
-}
+ 
 
 a:not([href]):not([class]),
 a:not([href]):not([class]):hover {
