@@ -475,7 +475,7 @@ textarea {
   background-color: var(--tp-yellow-color);
 }
 
-.c {
+.tp-cream-bg {
   background-color: var(--tp-cream-color);
 }
 
@@ -4206,6 +4206,20 @@ textarea {
 }
 .tpaward-wrapper {
   padding-right: 80px;
+}
+.tpaward-wrapper .row .col-md-6:nth-child(even) .tpaward {
+  padding-left: 50px;
+  border-left: 1px solid #57595c;
+}
+.tpaward-wrapper .row .col-md-6:nth-child(1) .tpaward {
+  padding-top: 0px;
+}
+.tpaward-wrapper .row .col-md-6:nth-child(2) .tpaward {
+  padding-top: 0px;
+}
+.tpaward-wrapper .row .col-md-6:nth-last-child(-n+2) .tpaward {
+  padding-bottom: 0px;
+  border-bottom: 0;
 }
 .tpaward span {
   font-family: var(--tp-fonts-heading);
