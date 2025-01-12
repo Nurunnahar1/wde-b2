@@ -4343,6 +4343,24 @@ textarea {
   z-index: 1;
 }
 
+.custom-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tpfact__text span {
+  font-family: var(--tp-fonts-heading);
+  font-size: 100px;
+  line-height: 1;
+  color: #fff;
+  display: inline-block;
+}
+.tpfact__title {
+  font-size: 30px;
+  color: #fff;
+  opacity: 0.5;
+}
+
 .tp-project-tab button {
   color: #fff;
   font-size: 100px;
