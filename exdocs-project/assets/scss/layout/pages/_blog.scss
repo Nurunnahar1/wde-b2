@@ -1,0 +1,36 @@
+@use "../../utils" as *;
+.tpblog {
+  &__thumb {
+    & img {
+    }
+  }
+  &__content {
+  }
+  &__meta {
+    & span {
+      font-family: var(--third-family);
+      font-weight: 300;
+      font-size: 20px;
+      text-align: center;
+      color: #57595c;
+      & a {
+      }
+    }
+    & cite {
+      width: 2px;
+      height: 16px;
+      display: inline-block;
+      background-color: #57595c;
+      margin: 0 15px;
+    }
+  }
+  &__title {  
+    font-size: 30px; 
+    color: #0a0e1a;
+ 
+  }
+  &__btn {
+    & a {
+    }
+  }
+}

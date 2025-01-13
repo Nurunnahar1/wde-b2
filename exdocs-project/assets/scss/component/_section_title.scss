@@ -2,7 +2,13 @@
 
 .tp-section-title {
   font-size: 60px;
-  &-white{
+  &-white {
     color: #fff;
+  }
+  &-wrapper {
+    & p {
+      font-size: 17px;
+      color: var(--tp-body-color);
+    }
   }
 }
