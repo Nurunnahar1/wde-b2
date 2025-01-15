@@ -1,1 +1,130 @@
-@use '../../utils' as *;
+@use "../../utils" as *;
+.footer-sep {
+  background: #fff;
+  opacity: 0.15;
+  height: 1px;
+}
+.tpfooter__social {
+  & a {
+    color: #fff;
+    opacity: 0.8;
+    margin-left: 15px;
+  }
+}
+.tp-footer-widget {
+  & ul {
+    & li {
+      margin-bottom: 5px;
+      & a {
+        font-size: 17px;
+        color: #b1b4ba;
+      }
+    }
+  }
+}
+
+.tp-footer-widget-title {
+  font-size: 20px;
+  color: #fff;
+}
+.footer-content {
+  color: #b1b4ba;
+}
+.tp-footer-content-item {
+  & span {
+    font-size: 17px;
+    color: #b1b4ba;
+  }
+  h4 {
+    font-size: 30px;
+    line-height: 133%;
+    color: #fff;
+  }
+}
+.tp-footer-col {
+  &-1 {
+  }
+  &-2 {
+  }
+  &-3 {
+    padding-left: 50px;
+  }
+  &-4 {
+    padding-left: 30px;
+  }
+  &-3,
+  &-4 {
+    position: relative;
+    &::before {
+      content: "";
+      height: 100%;
+      width: 1px;
+      position: absolute;
+      background-color: #fff;
+      opacity: 0.15;
+      left: -40px;
+      top: 0px;
+    }
+  }
+}
+.tp-footer-copyright {
+  & p {
+    font-size: 17px;
+    color: #b1b4ba;
+    & a {
+      color: var(--tp-yellow-color);
+      font-weight: 500;
+    }
+  }
+}
+.tp-footer-menu {
+  & ul {
+    & li {
+      display: inline-block;
+      margin-left: 30px;
+      padding-left: 30px;
+      position: relative;
+      &::before {
+        content: "";
+        height: 13px;
+        width: 1px;
+        position: absolute;
+        background-color: #b1b4ba;
+        left: 0;
+        top: 8px;
+      }
+      &:first-child {
+        &::before {
+          display: none;
+        }
+      }
+      & a {
+        font-weight: 500;
+        font-size: 15px;
+        text-transform: uppercase;
+        color: #b1b4ba;
+      }
+    }
+  }
+}
+.tp-footer-widget-area {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+.tp-footer-shape {
+  &-01 {
+    top: 38%;
+    left: 19%;
+  }
+  &-02 {
+    top: 13%;
+    left: 46%;
+  }
+  &-03 {
+  bottom: 7%;
+    right: 11%;
+  }
+  &-04 {
+    top: 9%;
+    right: 5%;
+  }
+}
