@@ -19,6 +19,11 @@
         font-size: 18px;
         padding: 36px 0;
         display: inline-block;
+        position: relative;
+        &::before{
+          content: "";
+          font-family: var(--tp-fonts-flaticon);
+        }
       }
 
       & .sub-menu {
@@ -80,16 +85,35 @@
   }
   &-search {
     margin-right: 40px;
+    & i {
+      font-size: 33px;
+      color: #b1b4ba;
+    }
+
+    @media #{$xl} {
+      margin-right: 25px;
+    }
   }
   &-bar {
     & button {
       background: #23252d;
-      padding: 35px 22px;
+      padding: 15px 25px;
+      & i {
+        color: #fff;
+        font-size: 60px;
+      }
     }
   }
   &-cta {
     padding: 25px 40px;
     border-left: 1px solid rgb(255, 255, 255, 0.15);
+    & i {
+      font-size: 33px;
+      color: var(--tp-yellow-color);
+    }
+    @media #{$xl} {
+      padding: 28px 25px;
+    }
 
     &-text span {
       color: #b1b4ba;

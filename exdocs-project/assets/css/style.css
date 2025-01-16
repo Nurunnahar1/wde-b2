@@ -143,6 +143,7 @@
 :root {
   --tp-fonts-heading: "Federo", sans-serif;
   --tp-fonts-body: "DM Sans", sans-serif;
+  --tp-fonts-flaticon: "flaticon";
 }
 
 .tp-btn {
@@ -4270,6 +4271,11 @@ textarea {
   font-size: 18px;
   padding: 36px 0;
   display: inline-block;
+  position: relative;
+}
+.tp-main-menu ul li a::before {
+  content: "";
+  font-family: var(--tp-fonts-flaticon);
 }
 .tp-main-menu ul li .sub-menu {
   position: absolute;
@@ -4322,13 +4328,35 @@ textarea {
 .tp-header-search {
   margin-right: 40px;
 }
+.tp-header-search i {
+  font-size: 33px;
+  color: #b1b4ba;
+}
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .tp-header-search {
+    margin-right: 25px;
+  }
+}
 .tp-header-bar button {
   background: #23252d;
-  padding: 35px 22px;
+  padding: 15px 25px;
+}
+.tp-header-bar button i {
+  color: #fff;
+  font-size: 60px;
 }
 .tp-header-cta {
   padding: 25px 40px;
   border-left: 1px solid rgba(255, 255, 255, 0.15);
+}
+.tp-header-cta i {
+  font-size: 33px;
+  color: var(--tp-yellow-color);
+}
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .tp-header-cta {
+    padding: 28px 25px;
+  }
 }
 .tp-header-cta-text span {
   color: #b1b4ba;
@@ -4433,7 +4461,7 @@ textarea {
 .tp-hero-shape-1.p-absolute {
   top: 417px;
   left: -45px;
-  z-index: 1;
+  z-index: 0;
 }
 
 .tp-hero-shape-4.p-absolute {
