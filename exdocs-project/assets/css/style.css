@@ -129,6 +129,7 @@
   --tp-theme-sec-color: #e5cf00;
   --tp-yellow-color: #FFE815;
   --tp-heading-color: #0a0e1a;
+  --tp-black-common: #0a0e1a;
   --tp-common-black: #0a0e19;
   --tp-body-color: #57595c;
   --tp-theme-nblue: #001c52;
@@ -517,6 +518,10 @@ textarea {
 .tp-brand-slide-element {
   width: auto;
   display: inline-block;
+}
+
+.tp-rotate-180 {
+  transform: rotate(180deg);
 }
 
 /*--
@@ -4257,7 +4262,7 @@ textarea {
   left: 0;
   right: 0;
   top: 0;
-  z-index: 2;
+  z-index: 99;
 }
 
 .tp-main-menu ul li {
@@ -4274,8 +4279,16 @@ textarea {
   position: relative;
 }
 .tp-main-menu ul li a::before {
-  content: "";
+  content: "\f118";
   font-family: var(--tp-fonts-flaticon);
+  font-size: 40px;
+  position: absolute;
+  top: -5px;
+  left: 26px;
+  transform: rotate(133deg);
+  color: var(--tp-theme-sec-color);
+  opacity: 0;
+  transition: 0.3s;
 }
 .tp-main-menu ul li .sub-menu {
   position: absolute;
@@ -4299,6 +4312,9 @@ textarea {
   padding: 5px 25px;
   font-size: 17px;
 }
+.tp-main-menu ul li .sub-menu li a::before {
+  display: none;
+}
 .tp-main-menu ul li .sub-menu li .sub-menu {
   left: 100%;
   top: 0;
@@ -4316,6 +4332,10 @@ textarea {
 }
 .tp-main-menu ul li:hover a {
   color: var(--tp-theme-sec-color);
+}
+.tp-main-menu ul li:hover a:before {
+  opacity: 1;
+  top: 0;
 }
 .tp-main-menu ul li:hover .sub-menu {
   opacity: 1;
@@ -4543,6 +4563,11 @@ textarea {
   color: #fff;
   opacity: 0.5;
 }
+.tpfact__icon span {
+  font-size: 110px;
+  display: inline-flex;
+  color: var(--tp-theme-sec-color);
+}
 
 .tp-project-tab button {
   color: #fff;
@@ -4567,6 +4592,11 @@ textarea {
   border: 1px solid #57595c;
   padding: 40px;
   transition: 0.3s;
+}
+.tpservices__icon i {
+  font-size: 92px;
+  color: var(--tp-black-common);
+  display: table;
 }
 .tpservices__text p {
   font-size: 16px;
@@ -4641,7 +4671,8 @@ textarea {
 }
 
 .tp-swiper-team-btn {
-  display: inline-block;
+  display: inline-flex;
+  font-size: 52px;
 }
 
 .tp-team-nav span {
@@ -4685,6 +4716,10 @@ textarea {
   position: absolute;
   left: -100px;
   top: 34%;
+  font-size: 52px;
+}
+.tp-swiper-testi-btn-prev {
+  transform: rotate(180deg);
 }
 .tp-swiper-testi-btn-next {
   left: auto;

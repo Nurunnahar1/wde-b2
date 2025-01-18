@@ -33,6 +33,10 @@
   position: absolute;
   left: -100px;
   top: 34%;
+  font-size: 52px;
+  &-prev{
+    transform: rotate(180deg);
+  }
   &-next {
     left: auto;
     right: -100px;
