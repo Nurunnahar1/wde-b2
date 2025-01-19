@@ -34,12 +34,21 @@
   left: -100px;
   top: 34%;
   font-size: 52px;
-  &-prev{
-    transform: rotate(180deg);
+  z-index: 9;
+  @media #{$xxlm} {
+    left: 0;
+    top: inherit;
+    bottom: 0;
   }
+ 
   &-next {
     left: auto;
     right: -100px;
+    @media #{$xxlm} {
+      bottom: -4px;
+      right: inherit;
+      left: 69px;
+    }
   }
 }
 .tp-testimonial-shape-thumb {

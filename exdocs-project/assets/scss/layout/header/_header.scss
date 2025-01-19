@@ -7,11 +7,24 @@
   z-index: 99;
 }
 .tp-main-menu {
+  @media #{$xxlm} {
+    padding-left: 20px;
+  }
+  @media #{$xl} {
+    padding-left: 20px;
+  }
+
   & ul {
     & li {
       display: inline-block;
       margin-right: 42px;
       position: relative;
+      @media #{$xxlm} {
+        margin-right: 25px;
+      }
+      @media #{$xl} {
+        margin-right: 28px;
+      }
 
       & a {
         font-family: var(--tp-fonts-body);
@@ -30,7 +43,7 @@
           transform: rotate(133deg);
           color: var(--tp-theme-sec-color);
           opacity: 0;
-          transition: .3s;
+          transition: 0.3s;
         }
       }
 
@@ -54,7 +67,7 @@
             display: block;
             padding: 5px 25px;
             font-size: 17px;
-            &::before{
+            &::before {
               display: none;
             }
           }
@@ -95,6 +108,11 @@
 }
 
 .tp-header {
+  &-area {
+    @media #{$xl} {
+      padding-left: 15px;
+    }
+  }
   &-border {
     border-bottom: 1px solid rgb(255, 255, 255, 0.15);
   }

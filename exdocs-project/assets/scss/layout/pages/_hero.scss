@@ -1,6 +1,9 @@
 @use "../../utils" as *;
 
 .tp-hero {
+    @media #{$xxlm}{
+      padding-left: 80px;
+      }
   &-title {
     font-size: 110px;
     text-transform: uppercase;
@@ -35,9 +38,9 @@
   font-size: 15px;
   text-transform: uppercase;
   color: #b1b4ba;
-  display: flex;
   width: 100px;
   height: 100%;
+  display: flex ;
   justify-content: space-around;
   flex-direction: column;
   top: 100px;

@@ -15,10 +15,14 @@
         color: var(--tp-theme-sec-color);
         border-color: var(--tp-theme-sec-color);
       }
+      @media #{$xxlm}{
+        font-size: 75px;
+      }
     }
     &-thumb {
       & img {
         border-radius: 20px;
+        width: 100%;
       }
     }
   }

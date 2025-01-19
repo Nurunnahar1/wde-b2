@@ -22,22 +22,24 @@
         margin-left: 50px;
       }
     }
-  }
-
-  &__title {
-    font-size: 30px;
-    margin-bottom: 5px;
-  }
-  &__social {
-    & a {
-      font-size: 25px;
-      color: #0a0e1a;
-      margin-right: 15px;
+    @media #{$xxlm} {
+      margin-left: 0px;
+    }
+    &__title {
+      font-size: 30px;
+      margin-bottom: 5px;
+    }
+    &__social {
+      & a {
+        font-size: 25px;
+        color: #0a0e1a;
+        margin-right: 15px;
+      }
     }
   }
 }
 .tp-swiper-team-btn {
-  display: inline-flex; 
+  display: inline-flex;
   font-size: 52px;
 }
 .tp-team-nav {
