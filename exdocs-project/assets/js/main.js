@@ -49,6 +49,19 @@
             nextEl: ".tp-swiper-team-btn-next",
             prevEl: ".tp-swiper-team-btn-prev",
         },
+        breakpoints: {
+            640: {
+                slidesPerView: 2, 
+            },
+            992: {
+                slidesPerView: 3, 
+                spaceBetween: 30,
+            },
+            1200: {
+                slidesPerView: 4, 
+                // spaceBetween: 40,
+            },
+        },
     });
 
     // background image

@@ -6,6 +6,9 @@
     @media #{$xl} {
       font-size: 85px;
     }
+    @media #{$lg} {
+      font-size: 60px;
+    }
   }
   &-name {
     font-size: 30px;
@@ -30,6 +33,9 @@
     right: 0;
     top: 75px;
     z-index: -1;
+    @media #{$lg} {
+      top: 0;
+    }
   }
 }
 .tp-swiper-testi-btn {
@@ -43,6 +49,10 @@
     top: inherit;
     bottom: 0;
   }
+  @media #{$lg} {
+    top: 20%; 
+    left: -18px;
+  }
 
   &-next {
     left: auto;
@@ -51,6 +61,11 @@
       bottom: -4px;
       right: inherit;
       left: 69px;
+    }
+    @media #{$lg} {
+      left: auto;
+      right: -18px;
+      top: 20%;
     }
   }
 }

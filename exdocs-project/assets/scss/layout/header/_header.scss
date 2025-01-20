@@ -112,6 +112,9 @@
     @media #{$xl} {
       padding-left: 15px;
     }
+    @media #{$lg} {
+      padding-left: 40px;
+    }
   }
   &-border {
     border-bottom: 1px solid rgb(255, 255, 255, 0.15);

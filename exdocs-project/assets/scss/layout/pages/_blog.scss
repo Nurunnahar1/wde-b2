@@ -5,6 +5,9 @@
     }
   }
   &__content {
+    @media #{$lg} {
+      padding-left: 0;
+    }
   }
   &__meta {
     & span {
@@ -24,10 +27,9 @@
       margin: 0 15px;
     }
   }
-  &__title {  
-    font-size: 30px; 
+  &__title {
+    font-size: 30px;
     color: #0a0e1a;
- 
   }
   &__btn {
     & a {

@@ -13,6 +13,9 @@
     @media #{$xl} {
       font-size: 100px;
     }
+    @media #{$lg} {
+      font-size: 75px;
+    }
     & span {
       background: radial-gradient(
         42.24% 2817.5% at 52.45% 54.17%,
@@ -59,25 +62,37 @@
   display: block ruby;
 }
 
-.tp-hero-shape-5.p-absolute {
+.tp-hero-shape-5 {
   right: 300px;
   bottom: 140px;
   z-index: 1;
+  @media #{$lg} {
+    right: 158px;
+    bottom: 109px;
+  }
 }
-.tp-hero-shape-1.p-absolute {
+.tp-hero-shape-1 {
   top: 417px;
   left: -45px;
   z-index: 0;
 }
-.tp-hero-shape-4.p-absolute {
+.tp-hero-shape-4 {
   right: 190px;
   top: 205px;
   z-index: 1;
+  @media #{$lg} {
+    right: 87px;
+    top: 181px;
+  }
 }
-.tp-hero-shape-3.p-absolute {
+.tp-hero-shape-3 {
   right: 37%;
   top: 33%;
   z-index: 1;
+  @media #{$lg} {
+    right: 54%;
+    top: 22%;
+  }
 }
 .tp-hero-shape-2.p-absolute {
   left: 385px;

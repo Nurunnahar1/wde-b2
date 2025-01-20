@@ -15,6 +15,13 @@
         padding: 17px 40px;
         font-size: 75px;
       }
+      @media #{$lg} {
+        padding: 17px 30px;
+        font-size: 60px;
+        width: 100%;
+        text-align: left;
+      }
+
       &.active {
         color: var(--tp-theme-sec-color);
         border-color: var(--tp-theme-sec-color);

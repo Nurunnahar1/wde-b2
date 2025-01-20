@@ -4380,6 +4380,11 @@ img {
     padding-left: 15px;
   }
 }
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .tp-header-area {
+    padding-left: 40px;
+  }
+}
 .tp-header-border {
   border-bottom: 1px solid rgba(255, 255, 255, 0.15);
 }
@@ -4489,6 +4494,11 @@ img {
     font-size: 100px;
   }
 }
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .tp-hero-title {
+    font-size: 75px;
+  }
+}
 .tp-hero-title span {
   background: radial-gradient(42.24% 2817.5% at 52.45% 54.17%, rgba(255, 232, 21, 0.95) 0%, #3c7fff 100%);
   -webkit-background-clip: text;
@@ -4530,28 +4540,46 @@ img {
   display: block ruby;
 }
 
-.tp-hero-shape-5.p-absolute {
+.tp-hero-shape-5 {
   right: 300px;
   bottom: 140px;
   z-index: 1;
 }
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .tp-hero-shape-5 {
+    right: 158px;
+    bottom: 109px;
+  }
+}
 
-.tp-hero-shape-1.p-absolute {
+.tp-hero-shape-1 {
   top: 417px;
   left: -45px;
   z-index: 0;
 }
 
-.tp-hero-shape-4.p-absolute {
+.tp-hero-shape-4 {
   right: 190px;
   top: 205px;
   z-index: 1;
 }
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .tp-hero-shape-4 {
+    right: 87px;
+    top: 181px;
+  }
+}
 
-.tp-hero-shape-3.p-absolute {
+.tp-hero-shape-3 {
   right: 37%;
   top: 33%;
   z-index: 1;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .tp-hero-shape-3 {
+    right: 54%;
+    top: 22%;
+  }
 }
 
 .tp-hero-shape-2.p-absolute {
@@ -4572,8 +4600,18 @@ img {
     padding-left: 25px;
   }
 }
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .tp-about-box {
+    padding-left: 21px;
+  }
+}
 
-.tp-about-video-icon a {
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .tp-about-area .tp-about-video {
+    padding-left: 30px;
+  }
+}
+.tp-about-area .tp-about-video-icon a {
   width: 80px;
   height: 80px;
   border: 1px solid #57595c;
@@ -4582,7 +4620,7 @@ img {
   border-radius: 50%;
   display: inline-block;
 }
-.tp-about-video h4 {
+.tp-about-area .tp-about-video h4 {
   color: #57595c;
   font-size: 30px;
 }
@@ -4603,6 +4641,12 @@ img {
   top: 47%;
   left: 35%;
   z-index: 1;
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .tp-font {
+    font-size: 50px;
+  }
 }
 
 .fs-100 {
@@ -4662,6 +4706,14 @@ img {
     font-size: 75px;
   }
 }
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .tp-project-tab button {
+    padding: 17px 30px;
+    font-size: 60px;
+    width: 100%;
+    text-align: left;
+  }
+}
 .tp-project-tab button.active {
   color: var(--tp-theme-sec-color);
   border-color: var(--tp-theme-sec-color);
@@ -4685,6 +4737,7 @@ img {
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
   .tpservices {
     padding: 40px 35px;
+    margin-right: -2px;
   }
 }
 .tpservices__icon i {
@@ -4751,6 +4804,11 @@ img {
 .tpteam__thumb img {
   border-radius: 15px;
 }
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .tpteam__info {
+    margin-left: 20px;
+  }
+}
 .tpteam__info span {
   color: var(--tp-body-color);
   font-size: 17px;
@@ -4801,6 +4859,11 @@ img {
     font-size: 85px;
   }
 }
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .tp-testimonial-desc {
+    font-size: 60px;
+  }
+}
 .tp-testimonial-name {
   font-size: 30px;
   margin-bottom: 8px;
@@ -4825,6 +4888,11 @@ img {
   top: 75px;
   z-index: -1;
 }
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .tp-testimonial-shape {
+    top: 0;
+  }
+}
 
 .tp-swiper-testi-btn {
   position: absolute;
@@ -4840,6 +4908,12 @@ img {
     bottom: 0;
   }
 }
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .tp-swiper-testi-btn {
+    top: 20%;
+    left: -18px;
+  }
+}
 .tp-swiper-testi-btn-next {
   left: auto;
   right: -100px;
@@ -4849,6 +4923,13 @@ img {
     bottom: -4px;
     right: inherit;
     left: 69px;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .tp-swiper-testi-btn-next {
+    left: auto;
+    right: -18px;
+    top: 20%;
   }
 }
 
@@ -4867,6 +4948,11 @@ img {
 .tp-newsletter-bg {
   padding: 80px;
   border-radius: 20px;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .tp-newsletter-box {
+    margin-top: 20px;
+  }
 }
 .tp-newsletter-box form {
   display: flex;
@@ -4917,6 +5003,11 @@ img {
   top: 22px;
 }
 
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .tpblog__content {
+    padding-left: 0;
+  }
+}
 .tpblog__meta span {
   font-family: var(--third-family);
   font-weight: 300;

@@ -3,8 +3,14 @@
   @media #{$xl} {
     padding-left: 25px;
   }
+  @media #{$lg} {
+    padding-left: 21px;
+  }
 }
-.tp-about-video {
+.tp-about-area .tp-about-video {
+  @media #{$lg} {
+    padding-left: 30px;
+  }
   &-icon {
     & a {
       width: 80px;
@@ -35,4 +41,9 @@
   top: 47%;
   left: 35%;
   z-index: 1;
+}
+.tp-font {
+  @media #{$lg} {
+    font-size: 50px;
+  }
 }
