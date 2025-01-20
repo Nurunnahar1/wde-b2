@@ -4,6 +4,9 @@
   border-bottom: 1px solid #57595c;
   &-wrapper {
     padding-right: 80px;
+    @media #{$xl} {
+      padding-right: 50px;
+    }
 
     & .row {
       & .col-md-6:nth-child(even) {
@@ -40,5 +43,8 @@
   &__title {
     font-size: 30px;
     margin: 0;
+    @media #{$xl} {
+      font-size: 27px;
+    }
   }
 }

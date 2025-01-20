@@ -4,13 +4,15 @@
   margin-right: -1px;
   border: 1px solid #57595c;
   padding: 40px;
-  transition: .3s;
-  &__icon{
-    & i{
+  transition: 0.3s;
+  @media #{$xl} {
+    padding: 40px 35px;
+  }
+  &__icon {
+    & i {
       font-size: 92px;
       color: var(--tp-black-common);
       display: table;
-
     }
   }
   &__text {
@@ -22,6 +24,9 @@
   &__title {
     margin: 34px 0 20px 0;
     font-size: 30px;
+    @media #{$xl} {
+      font-size: 28px;
+    }
   }
   &__list {
     & ul {
@@ -44,9 +49,9 @@
   }
   &:hover {
     background-color: var(--tp-spring-color-1);
-    & .tp-sv-btn{
-        background-color: var(--tp-theme-color);
-        color: #fff;
+    & .tp-sv-btn {
+      background-color: var(--tp-theme-color);
+      color: #fff;
     }
   }
 }
@@ -58,12 +63,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-    transition: .3s;
+  transition: 0.3s;
 
   & i {
     transform: rotate(-45deg);
   }
- 
 }
-
-

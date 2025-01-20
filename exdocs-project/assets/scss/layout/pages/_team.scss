@@ -1,5 +1,9 @@
 @use "../../utils" as *;
 
+.tp-team-area {
+  padding-left: 40px;
+  padding-right: 40px;
+}
 .tpteam {
   &__thumb {
     & img {
@@ -22,19 +26,19 @@
         margin-left: 50px;
       }
     }
-    @media #{$xxlm} {
+    @media #{$xxlm, $xl} {
       margin-left: 0px;
     }
     &__title {
       font-size: 30px;
       margin-bottom: 5px;
     }
-    &__social {
-      & a {
-        font-size: 25px;
-        color: #0a0e1a;
-        margin-right: 15px;
-      }
+  }
+  &__social {
+    & a {
+      font-size: 25px;
+      color: #0a0e1a;
+      margin-right: 15px; 
     }
   }
 }

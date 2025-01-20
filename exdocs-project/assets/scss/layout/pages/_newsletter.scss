@@ -34,6 +34,11 @@
     bottom: -23px;
     line-height: 1;
     margin: 0;
+    @media #{$xl} {
+      font-size: 83px;
+      left: 59px;
+      bottom: -24px;
+    }
   }
   &-input {
     width: calc(100% - 205px);

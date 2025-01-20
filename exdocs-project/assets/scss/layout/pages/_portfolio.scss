@@ -11,11 +11,15 @@
       border-bottom-color: rgb(47, 68, 107);
       padding: 17px 39px 17px 77px;
       transition: 0.3s;
+      @media #{$xl} {
+        padding: 17px 40px;
+        font-size: 75px;
+      }
       &.active {
         color: var(--tp-theme-sec-color);
         border-color: var(--tp-theme-sec-color);
       }
-      @media #{$xxlm}{
+      @media #{$xxlm} {
         font-size: 75px;
       }
     }
