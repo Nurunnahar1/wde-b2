@@ -283,6 +283,19 @@ b {
   color: var(--tp-heading-color);
 }
 
+a,
+button,
+p,
+input,
+select,
+textarea,
+li,
+.transition-3 {
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
 a:not([href]):not([class]),
 a:not([href]):not([class]):hover {
   color: inherit;
@@ -5014,6 +5027,11 @@ img {
   font-size: 20px;
   text-align: center;
   color: #57595c;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .tpblog__meta span {
+    font-size: 19px;
+  }
 }
 .tpblog__meta cite {
   width: 2px;

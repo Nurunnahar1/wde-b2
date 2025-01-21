@@ -16,7 +16,8 @@
       font-size: 20px;
       text-align: center;
       color: #57595c;
-      & a {
+      @media #{$lg} {
+        font-size: 19px;
       }
     }
     & cite {
