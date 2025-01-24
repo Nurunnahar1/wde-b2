@@ -10,18 +10,26 @@
 </head>
 
 <body>
+    <!-- header area start -->
     <header>
         <div class="tp-header-area tp-header-transparent">
             <div class="container tp-header-container">
                 <div class="tp-header-bg">
-                    <div class="tp-header-row">
-                        <div class="tp-header-logo-box">
-                            <div class="tp-header-logo tp-header-logo-shape">
+                    <div class="tp-header-row d-flex">
+                        <div
+                            class="tp-header-logo-box text-center tp-header-logo-shape d-flex justify-content-center align-items-center">
+                            <svg width="218" height="70" viewBox="0 0 218 70" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M0 12C0 5.37258 5.37258 0 12 0H196.842L215.619 28.3784C218.275 32.3932 218.275 37.6068 215.619 41.6216L196.842 70H12C5.37257 70 0 64.6274 0 58V12Z"
+                                    fill="#063D30" />
+                            </svg>
+                            <div class="tp-header-logo">
                                 <a href="#"> <img src="assets/img/logo-01.png" alt=""></a>
                             </div>
                         </div>
-                        <div class="tp-header-content">
-                            <div class="tp-header-menu">
+                        <div class="tp-header-content d-flex justify-content-between">
+                            <div class="tp-header-menu ml-45">
                                 <nav>
                                     <ul>
                                         <li><a href="#">Home</a>
@@ -49,8 +57,8 @@
                                     </ul>
                                 </nav>
                             </div>
-                            <div class="tp-header-right">
-                                <div class="tp-header-phone">
+                            <div class="tp-header-right mr-5 d-flex align-items-center">
+                                <div class="tp-header-phone mr-25">
                                     <a href="tel:(+12) 800 222 000">
                                         <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
@@ -69,9 +77,26 @@
                 </div>
             </div>
     </header>
-    <section class="hero-area ">
-        <img src="assets/img/hero/hero-01.jpg" alt="">
+    <!-- header area end -->
+    <!-- hero area start -->
+    <section class="tp-hero-area " style="background-image: url(assets/img/hero/hero-01.jpg);">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-8">
+                    <div class="tp-hero">
+                        <span>Stop world hunger</span>
+                        <h1>Every child deserves to Eat.</h1>
+                        <div class="tp-hero-btn">
+                            <a href="#" class="tp-btn tp-btn-hero  ">Donate Now</a>
+                            <a href="#" class="tp-btn tp-btn-hero ">Grt Involved</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4"></div>
+            </div>
+        </div>
     </section>
+    <!-- header area end -->
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/bootstrap.bundle.js"></script>
     <script src="assets/js/main.js"></script>

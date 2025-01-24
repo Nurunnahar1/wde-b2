@@ -4,8 +4,17 @@
   display: inline-block;
   color: var(--tp-green-color);
   background: var(--tp-yellow-color);
-  padding: 22px 34px;
+  padding: 22px 33px;
   border-radius: 12px;
   line-height: 1;
   font-size: 16px;
+  &-hero {
+    background-color: var(--tp-white-color);
+    font-weight: 600;
+    color: #121018;
+    &:hover {
+      background-color: var(--tp-yellow-color);
+      color: #121018;
+    }
+  }
 }

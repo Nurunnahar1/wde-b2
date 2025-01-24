@@ -1,1 +1,21 @@
-@use '../../utils/' as *;
+@use "../../utils/" as *;
+.tp-hero {
+  padding: 285px 0 345px 0;
+  & span {
+    font-family: var(--tp-sub-heading);
+    font-weight: 400;
+    font-size: 50px;
+    color: var(--tp-yellow-color);
+  }
+  & h1 {
+    font-weight: 700;
+    font-size: 120px;
+    letter-spacing: -0.03em;
+    color: #fff;
+    line-height: 1;
+    margin-top: 14px;
+  }
+  &-btn {
+    margin-top: 37px;
+  }
+}

@@ -1,1 +1,12 @@
 @use '../utils/' as *;
+/*-- Margin Left --*/
+@for $i from 1 through 20 {
+  .ml-#{5 * $i} {
+    margin-left: 5px * $i;
+  }
+}
+@for $i from 1 through 20 {
+  .mr-#{5 * $i} {
+    margin-right: 5px * $i;
+  }
+}
