@@ -10,3 +10,13 @@
     margin-right: 5px * $i;
   }
 }
+@for $i from 1 through 20 {
+  .mt-#{5 * $i} {
+    margin-top: 5px * $i;
+  }
+}
+@for $i from 1 through 20 {
+  .mb-#{5 * $i} {
+    margin-bottom: 5px * $i;
+  }
+}
