@@ -762,8 +762,9 @@ img {
   margin-right: 4px;
 }
 
-.tp-hero {
-  padding: 285px 0 345px 0;
+.tp-hero-area {
+  padding-top: 285px;
+  padding-bottom: 345px;
 }
 .tp-hero span {
   font-size: 50px;
@@ -774,6 +775,29 @@ img {
   font-size: 120px;
   letter-spacing: -3.6px;
   line-height: 1;
+}
+.tp-hero-video a {
+  border-radius: 90px;
+  border: 2px solid #fff;
+  background: rgba(255, 255, 255, 0.06);
+  box-shadow: 0px 0px 30px 0px rgba(17, 17, 45, 0.1);
+  backdrop-filter: blur(5px);
+  width: 90px;
+  height: 90px;
+  display: inline-block;
+  text-align: center;
+  line-height: 106px;
+}
+.tp-hero-shape-1 {
+  top: 34%;
+  left: 8%;
+}
+.tp-hero-shape-2 {
+  bottom: 16%;
+  left: 10%;
+}
+.tp-hero-shape-bottom {
+  bottom: 0;
 }
 
 .tp-btn {
