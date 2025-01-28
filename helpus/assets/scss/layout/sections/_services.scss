@@ -1,1 +1,16 @@
-@use '../../utils/' as *;
+@use "../../utils/" as *;
+.tpservices {
+  border-radius: 16px 16px 0 0;
+  margin-top: -50%;
+  border-bottom: 4px solid;
+  @include tp-transition();
+
+  &__title {
+    font-size: 24px;
+    letter-spacing: -1px;
+  }
+  &:hover {
+    transform: translateY(-15px);
+    box-shadow: 0px 20px 60px 0px rgba(41, 28, 3, 0.1);
+  }
+}

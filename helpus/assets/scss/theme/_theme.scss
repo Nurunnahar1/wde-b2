@@ -51,7 +51,7 @@
 ---------------------------------*/
 body {
   font-family: var(--tp-font-body);
-  font-size: 17px;
+  font-size: 18px;
   font-weight: normal;
   color: var(--tp-body-color);
   line-height: 28px;
@@ -68,7 +68,7 @@ h4,
 h5,
 h6 {
   font-family: var(--tp-font-heading);
-  color: var(--tp-theme-color);
+  color: var(--tp-theme-heading);
   margin-top: 0px;
   font-weight: 700;
   line-height: 1;
@@ -106,11 +106,14 @@ ul {
 
 p {
   font-family: var(--tp-font-body);
-  font-size: 17px;
+  font-size: 18px;
   font-weight: 400;
   color: var(--tp-body-color);
   margin-bottom: 15px;
   line-height: 28px;
+}
+span{
+  color: var(--tp-body-color)
 }
 
 a,
@@ -227,4 +230,10 @@ textarea {
 }
 .tp-header-bg {
   background-color: var(--tp-header-bg);
+}
+.tp-service-bg {
+  background-color: var(--tp-gray-color);
+}
+.tp-white-bg {
+  background-color: var(--tp-white-color);
 }
