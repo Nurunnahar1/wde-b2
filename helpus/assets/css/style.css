@@ -44,6 +44,7 @@
   --tp-green-color: #073D30;
   --tp-white-color: #fff;
   --tp-gray-color: #F2F0EC;
+  --tp-pink-color: #ff73ae;
 }
 
 :root {
@@ -291,8 +292,8 @@ textarea {
   font-weight: 500;
 }
 
-.tp-header-bg {
-  background-color: var(--tp-header-bg);
+.tp-white-bg {
+  background-color: var(--tp-white-bg);
 }
 
 .tp-service-bg {
@@ -1002,6 +1003,14 @@ img {
   font-family: var(--tp-sub-heading);
 }
 
+.pb-130 {
+  padding-bottom: 130px;
+}
+
+.br-12 {
+  border-radius: 12px;
+}
+
 .tp-header-transparent {
   position: absolute;
   top: 26px;
@@ -1099,13 +1108,11 @@ img {
 .tp-about-img {
   position: relative;
 }
-
 .tp-about-number {
   position: absolute;
-  top: 50%;
-  right: -20%;
+  top: 58%;
+  right: -27%;
 }
-
 .tp-about-number-info {
   position: absolute;
   top: 50%;
@@ -1124,6 +1131,34 @@ img {
   font-size: 15px;
   letter-spacing: 0;
   margin: 0;
+}
+.tp-about-vr-title {
+  color: #e0deda;
+  font-size: 130px;
+  font-weight: 600;
+  transform: rotate(90deg);
+  line-height: 1;
+  position: absolute;
+  right: -191px;
+  top: 120px;
+  margin: 0;
+}
+.tp-about-info p {
+  line-height: 30px;
+}
+
+.tp-about-fact-box.tp-white-bg.br-12 {
+  display: flex;
+  padding: 20px 10px 8px;
+}
+.tp-about-fact-box.tp-white-bg.br-12 h4 {
+  line-height: 1;
+  letter-spacing: -0.96px;
+}
+.tp-about-fact-box.tp-white-bg.br-12 p {
+  font-size: 15px;
+  line-height: 1;
+  font-size: 15px;
 }
 
 .tp-hero-area {
@@ -1201,6 +1236,19 @@ img {
 }
 .tp-btn-text {
   font-size: 15px;
+}
+
+.tp-section-sub-font {
+  color: var(--tp-pink-color);
+  font-size: 30px;
+  line-height: 60px;
+}
+.tp-section-title {
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -2.4px;
 }
 
 /*# sourceMappingURL=style.css.map */

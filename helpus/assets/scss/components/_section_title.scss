@@ -1,0 +1,15 @@
+@use "../utils/" as *;
+.tp-section {
+  &-sub-font {
+    color: var(--tp-pink-color);
+    font-size: 30px;
+    line-height: 60px;
+  }
+  &-title { 
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.1; 
+    letter-spacing: -2.4px;
+  }
+}

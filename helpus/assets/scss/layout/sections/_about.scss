@@ -1,28 +1,57 @@
 @use "../../utils/" as *;
-.tp-about-img {
-  position: relative;
-}
-.tp-about-number {
-  position: absolute;
-  top: 50%;
-  right: -20%;
-}
-.tp-about-number-info {
-  position: absolute;
-  top: 50%;
-  text-align: right;
-  transform: translateY(-50%);
-  left: 0;
-  right: 0;
-  padding-right: 62px;
-  & h2 {
-    color: #f8f3e7;
-    font-size: 90px; 
+.tp-about {
+  &-img {
+    position: relative;
   }
-  & h6 {
-    color: #f8f3e7; 
-    font-size: 15px;  
-    letter-spacing: 0;
+  &-number {
+    position: absolute;
+    top: 58%;
+    right: -27%;
+    &-info {
+      position: absolute;
+      top: 50%;
+      text-align: right;
+      transform: translateY(-50%);
+      left: 0;
+      right: 0;
+      padding-right: 62px;
+      & h2 {
+        color: #f8f3e7;
+        font-size: 90px;
+      }
+      & h6 {
+        color: #f8f3e7;
+        font-size: 15px;
+        letter-spacing: 0;
+        margin: 0;
+      }
+    }
+  }
+  &-vr-title {
+    color: #e0deda;
+    font-size: 130px;
+    font-weight: 600;
+    transform: rotate(90deg);
+    line-height: 1;
+    position: absolute;
+    right: -191px;
+    top: 120px;
     margin: 0;
+  }
+  &-info p {
+    line-height: 30px;
+  }
+}
+.tp-about-fact-box.tp-white-bg.br-12 {
+  display: flex;
+  padding: 20px 10px 8px;
+  & h4 {
+    line-height: 1;
+    letter-spacing: -0.96px;
+  }
+  & p {
+    font-size: 15px;
+    line-height: 1;
+    font-size: 15px;
   }
 }
