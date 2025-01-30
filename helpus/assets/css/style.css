@@ -1146,19 +1146,24 @@ img {
 .tp-about-info p {
   line-height: 30px;
 }
-
-.tp-about-fact-box.tp-white-bg.br-12 {
+.tp-about-fact-box {
   display: flex;
   padding: 20px 10px 8px;
 }
-.tp-about-fact-box.tp-white-bg.br-12 h4 {
+.tp-about-fact-box h4 {
   line-height: 1;
   letter-spacing: -0.96px;
 }
-.tp-about-fact-box.tp-white-bg.br-12 p {
+.tp-about-fact-box p {
   font-size: 15px;
   line-height: 1;
   font-size: 15px;
+}
+.tp-about-fact-shape {
+  position: absolute;
+  top: 0;
+  left: -50px;
+  max-width: inherit;
 }
 
 .tp-hero-area {

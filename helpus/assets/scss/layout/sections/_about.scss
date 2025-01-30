@@ -41,17 +41,25 @@
   &-info p {
     line-height: 30px;
   }
-}
-.tp-about-fact-box.tp-white-bg.br-12 {
-  display: flex;
-  padding: 20px 10px 8px;
-  & h4 {
-    line-height: 1;
-    letter-spacing: -0.96px;
-  }
-  & p {
-    font-size: 15px;
-    line-height: 1;
-    font-size: 15px;
+  &-fact {
+    &-box {
+      display: flex;
+      padding: 20px 10px 8px;
+      & h4 {
+        line-height: 1;
+        letter-spacing: -0.96px;
+      }
+      & p {
+        font-size: 15px;
+        line-height: 1;
+        font-size: 15px;
+      }
+    }
+    &-shape {
+      position: absolute;
+      top: 0;
+      left: -50px;
+      max-width: inherit;
+    }
   }
 }
