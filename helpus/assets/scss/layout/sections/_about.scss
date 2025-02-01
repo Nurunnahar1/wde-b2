@@ -1,7 +1,15 @@
 @use "../../utils/" as *;
 .tp-about {
-  &-img {
-    position: relative;
+  &-shape {
+    mix-blend-mode: exclusion;
+    &-1 {
+      top: 130px;
+      left: 6%;
+    }
+    &-2 {
+      top: -71px;
+      right: -12%;
+    }
   }
   &-number {
     position: absolute;
@@ -43,7 +51,6 @@
   }
   &-fact {
     &-box {
-      display: flex;
       padding: 20px 10px 8px;
       & h4 {
         line-height: 1;
@@ -60,6 +67,7 @@
       top: 0;
       left: -50px;
       max-width: inherit;
+      mix-blend-mode: multiply;
     }
   }
 }

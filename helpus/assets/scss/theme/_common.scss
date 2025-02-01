@@ -33,6 +33,7 @@ img {
 
 .z-index-11 {
   z-index: 11;
+  position: relative;
 }
 .overflow-y-visible {
   overflow-x: hidden;
@@ -52,9 +53,12 @@ img {
 .tp-sub-font {
   font-family: var(--tp-sub-heading);
 }
-.pb-130{
+.pb-130 {
   padding-bottom: 130px;
 }
-.br-12{
+.br-12 {
   border-radius: 12px;
+}
+.bg-gray {
+  background-color: var(--tp-gray-color);
 }
