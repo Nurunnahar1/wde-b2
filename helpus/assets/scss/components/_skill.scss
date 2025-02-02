@@ -1,1 +1,37 @@
-@use '../utils/' as *;
+@use "../utils/" as *;
+.tpprogress {
+  &__label {
+    background: var(--tp-yellow-color);
+    line-height: 1;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 7px 6px;
+    position: relative;
+    color: #121018;
+    border-radius: 6px;
+    transform: translateX(-66%);
+    margin-bottom: 7px;
+    &::before {
+      position: absolute;
+      content: "";
+      width: 0px;
+      height: 0px;
+      border-style: solid;
+      border-width: 5px 5px 0 5px;
+      border-color: var(--tp-yellow-color) transparent transparent transparent;
+      transform: rotate(0deg);
+      bottom: -5px;
+      left: 0;
+      right: 0;
+      margin: auto;
+    }
+  }
+  & .progress,
+  & .progress-stacked {
+    --bs-progress-height: 8px;
+    --bs-progress-bar-color: #fff;
+    --bs-progress-bar-bg: var(--tp-yellow-color);
+    background-color: rgba(18, 16, 24, 0.1);
+    border-radius: 6px;
+  }
+}

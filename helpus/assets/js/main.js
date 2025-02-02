@@ -28,4 +28,14 @@ $(function () {
         // other options
     });
 
+    // tpcauses slider
+    var swiper = new Swiper(".tpcauses-slider-active", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+    });
+
 }); 

@@ -1,0 +1,40 @@
+@use "../../utils/" as *;
+
+.tpcauses {
+  padding: 16px;
+  &__meta {
+    & span {
+      color: #85838b;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 1;
+      & svg {
+        margin-right: 5px;
+      }
+    }
+  }
+  &__title {
+    font-size: 30px;
+    line-height: 1;
+  }
+  &__amount {
+    margin-top: 12px;
+    & label {
+      color: #56605d;
+      font-size: 15px;
+      line-height: 1;
+      display: block;
+      margin-bottom: 4px;
+    }
+    & span {
+      color: #121018;
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 1;
+      display: block;
+    }
+  }
+}
+.swiper.tpcauses-slider-active {
+  margin-right: 570px;
+}

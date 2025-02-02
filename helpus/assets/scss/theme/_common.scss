@@ -56,9 +56,24 @@ img {
 .pb-130 {
   padding-bottom: 130px;
 }
-.br-12 {
-  border-radius: 12px;
+.br {
+  &-12 {
+    border-radius: 12px;
+  }
+  &-16 {
+    border-radius: 12px;
+  }
+  &-20 {
+    border-radius: 12px;
+  }
 }
 .bg-gray {
   background-color: var(--tp-gray-color);
+} 
+.tp-service-bg {
+  background-color: var(--tp-gray-color);
 }
+.tp-white-bg {
+  background-color: var(--tp-white-color);
+}
+ 
