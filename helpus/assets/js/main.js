@@ -32,9 +32,9 @@ $(function () {
     var swiper = new Swiper(".tpcauses-slider-active", {
         slidesPerView: 3,
         spaceBetween: 30,
-        pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
+        navigation: {
+            prevEl: ".tpcauses__arrow-prev",
+            nextEl: ".tpcauses__arrow-next",
         },
     });
 

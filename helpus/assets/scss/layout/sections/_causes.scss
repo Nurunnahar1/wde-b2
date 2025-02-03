@@ -1,6 +1,7 @@
 @use "../../utils/" as *;
 
 .tpcauses {
+  box-shadow: 0px 36px 16px -24px rgba(18, 16, 24, 0.08); 
   padding: 16px;
   &__meta {
     & span {
@@ -34,7 +35,21 @@
       display: block;
     }
   }
+  &__downtext{
+    & p{
+      font-size: 24px;
+    }
+  }
 }
 .swiper.tpcauses-slider-active {
-  margin-right: 570px;
+  margin-right: -570px;
+}
+.tp-arrow {
+  border-radius: 12px;
+  border: 1px solid rgba(18, 16, 24, 0.1);
+  width: 60px;
+  height: 60px;
+  &-prev{
+    margin-right: 6px;
+  }
 }
