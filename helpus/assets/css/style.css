@@ -1026,6 +1026,10 @@ img {
   background-color: var(--tp-white-color);
 }
 
+.tp-yellow-bg {
+  background-color: var(--tp-yellow-color);
+}
+
 .tp-header-transparent {
   position: absolute;
   top: 26px;
@@ -1336,6 +1340,30 @@ img {
 .tp-author-shape-9 {
   right: 9%;
   bottom: 15%;
+}
+
+.tp-text-slider-title {
+  font-size: 80px;
+  font-weight: 300;
+  margin-bottom: 0;
+  padding-bottom: 30px;
+  padding-top: 12px;
+}
+.tp-text-slider img {
+  margin-right: 30px;
+}
+.tp-text-slider-rotate {
+  transform: rotate(1deg);
+}
+
+.slide-transition {
+  -webkit-transition-timing-function: linear;
+  transition-timing-function: linear;
+}
+
+.tp-text-slide-element {
+  width: auto;
+  display: inline-block;
 }
 
 .tp-btn {

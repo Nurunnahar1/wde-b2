@@ -37,5 +37,34 @@ $(function () {
             nextEl: ".tpcauses__arrow-next",
         },
     });
+    // tptext slider
+    var swiper_text = new Swiper(".tptext-slider-active", {
+        slidesPerView: "auto",
+        spaceBetween: 40,
+        freemode: true,
+        centeredSlides: true,
+        loop: true,
+        allowTouchMove: false,
+        speed: 6000,
+        autoplay: {
+            delay: 1,
+            disableOnInteraction: true,
+        },
+    });
 
-}); 
+    // $(".tptext-slider-active").hover(function () {
+    //     swiper_text.autoplay.stop();
+    // }, function () {
+    //     swiper_text.autoplay.start();
+    // });
+
+
+
+    $('.tptext-slider-active').hover(function () {
+        swiper_text.autoplay.stop();
+    }, function () {
+        swiper_text.autoplay.start();
+    });
+
+})(jQuery); 
+ 
