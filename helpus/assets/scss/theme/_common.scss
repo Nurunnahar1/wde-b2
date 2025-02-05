@@ -69,15 +69,22 @@ img {
 }
 .bg-gray {
   background-color: var(--tp-gray-color);
-} 
+}
 .tp-service-bg {
   background-color: var(--tp-gray-color);
 }
 .tp-white-bg {
   background-color: var(--tp-white-color);
 }
- 
+
 .tp-yellow-bg {
   background-color: var(--tp-yellow-color);
 }
- 
+.fns {
+  &-50 {
+    font-size: 50px;
+  }
+  &-16{
+    font-size:16px;
+  }
+}
