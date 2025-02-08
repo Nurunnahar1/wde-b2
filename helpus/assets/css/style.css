@@ -45,6 +45,7 @@
   --tp-white-color: #fff;
   --tp-gray-color: #F2F0EC;
   --tp-pink-color: #ff73ae;
+  --tp-offwhite-color: #454449;
 }
 
 :root {
@@ -409,6 +410,17 @@
 .tp-nav-tabs button.active {
   border-radius: 12px;
   background: #FFCF4E;
+}
+
+.tp-fact-item {
+  border-left: 1px solid var(--tp-yellow-color);
+  padding-left: 20px;
+}
+.tp-fact-item span {
+  color: #121018;
+}
+.tp-fact-item p {
+  color: var(--tp-offwhite-color);
 }
 
 .tp-btn {
@@ -1492,6 +1504,22 @@ img {
 }
 .fns-16 {
   font-size: 16px;
+}
+
+.fnw-300 {
+  font-weight: 300;
+}
+.fnw-400 {
+  font-weight: 400;
+}
+.fnw-500 {
+  font-weight: 500;
+}
+.fnw-600 {
+  font-weight: 600;
+}
+.fnw-700 {
+  font-weight: 700;
 }
 
 /*# sourceMappingURL=style.css.map */
