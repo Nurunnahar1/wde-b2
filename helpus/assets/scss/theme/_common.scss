@@ -105,3 +105,17 @@ img {
     font-weight: 700;
   }
 }
+.p{
+  &-40{
+    padding: 40px;
+  }
+}
+
+//height
+.tp-h-630{
+  min-height: 630px;
+}
+ // color
+  .c-green{
+    color: var(--tp-primary-color);
+  }

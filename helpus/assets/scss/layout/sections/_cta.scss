@@ -1,0 +1,12 @@
+@use "../../utils/" as *;
+.tp-cta-img {
+  right: 43px;
+  bottom: 0;
+  &-2 {
+    right: 0;
+    left: 0;
+    & img {
+      mix-blend-mode: luminosity;
+    }
+  }
+}
