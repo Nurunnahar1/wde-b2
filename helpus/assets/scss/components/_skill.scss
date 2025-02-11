@@ -30,8 +30,14 @@
   & .progress-stacked {
     --bs-progress-height: 8px;
     --bs-progress-bar-color: #fff;
+    --bs-progress-bg: rgba(18, 16, 24, 0.1);
     --bs-progress-bar-bg: var(--tp-yellow-color);
-    background-color: rgba(18, 16, 24, 0.1);
     border-radius: 6px;
   }
+}
+
+.tp-help-progress .progress,
+.tp-help-progress .progress-stacked {
+  --bs-progress-height: 10px;
+  --bs-progress-bg: rgba(248, 243, 231, 0.1);
 }
