@@ -1,0 +1,40 @@
+@use "../../utils/" as *;
+.tpevents {
+    @include tp-transition(.3s);
+    margin-bottom: 12px;
+  &__date {
+    padding: 8px 30px;
+      border-right: 1px solid rgba(18, 16, 24, 0.1);
+      text-align: center;
+      line-height: 1;
+    & span {
+      color: #454449;
+      font-size: 14px; 
+      text-transform: uppercase;
+      margin-bottom: 6px;
+      display: block;
+    }
+    &--num {
+      color: var(--tp-theme-heading);
+      font-weight: 700;
+    }
+  }
+  &__title {
+   margin-bottom: 13px;
+  }
+  &__meta {
+    & span {
+      color: #454449;
+      font-size: 15px; 
+      margin-right: 20px;
+      display: inline-flex;
+      align-items: center;
+      & svg{
+        margin-right: 8px;
+      }
+    }
+  } 
+  &:hover{
+    box-shadow: 0px 20px 40px 0px rgba(18, 16, 24, 0.08);
+  }
+}

@@ -53,6 +53,9 @@ img {
 .tp-sub-font {
   font-family: var(--tp-sub-heading);
 }
+.tp-heading-font{
+    font-family: var(--tp-font-heading);
+}
 .pb-130 {
   padding-bottom: 130px;
 }
@@ -92,6 +95,12 @@ img {
   }
   &-20{
     font-size:20px;
+  }
+  &-26{
+    font-size:26px;
+  }
+  &-34{
+    font-size:34px;
   }
 }
 .fnw{
