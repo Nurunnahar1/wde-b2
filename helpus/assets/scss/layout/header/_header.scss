@@ -1,7 +1,7 @@
 @use "../../utils/" as *;
 .tp-header {
   &-transparent {
-    position: absolute;
+    position: absolute !important;
     top: 26px;
     left: 0;
     right: 0;
