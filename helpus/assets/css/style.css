@@ -1722,6 +1722,9 @@ img {
 .br-20 {
   border-radius: 20px;
 }
+.br-30 {
+  border-radius: 30px;
+}
 
 .bg-gray {
   background-color: var(--tp-gray-color);
@@ -1784,6 +1787,11 @@ img {
 
 .c-green {
   color: var(--tp-primary-color);
+}
+
+.container-1400 {
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 /*# sourceMappingURL=style.css.map */
