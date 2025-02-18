@@ -90,6 +90,9 @@ img {
   &-50 {
     font-size: 50px;
   }
+  &-80 {
+    font-size: 80px;
+  }
   &-60 {
     font-size: 60px;
   }
@@ -137,9 +140,9 @@ img {
 .c-green {
   color: var(--tp-primary-color);
 }
-.container{
-  &-1400{
+.container {
+  &-1400 {
     max-width: 1400px;
-    margin:0 auto;
+    margin: 0 auto;
   }
 }
