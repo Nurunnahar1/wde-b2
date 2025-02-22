@@ -555,6 +555,14 @@
   display: inline-block;
 }
 
+.tp-brand {
+  background: #fff;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .tp-nav-tabs {
   display: flex;
   flex-wrap: wrap;
@@ -1689,6 +1697,10 @@ textarea {
 
 .pt-130 {
   padding-top: 130px;
+}
+
+.pt-120 {
+  padding-top: 120px;
 }
 
 .w-img img {
