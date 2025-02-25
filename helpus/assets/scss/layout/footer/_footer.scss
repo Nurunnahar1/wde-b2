@@ -1,1 +1,6 @@
-@use '../../utils/' as *;
+@use "../../utils/" as *;
+.tp-footer {
+  &-bg {
+    // mix-blend-mode: luminosity;
+  }
+}

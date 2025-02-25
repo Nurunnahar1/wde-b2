@@ -20,7 +20,7 @@
     margin-bottom: 5px * $i;
   }
 }
-@for $i from 1 through 20 {
+@for $i from 1 through 30 {
   .pt-#{5 * $i} {
     padding-top: 5px * $i;
   }
