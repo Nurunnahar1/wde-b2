@@ -1,8 +1,20 @@
 @use "../../utils/" as *;
-.tp-cta { 
+.tp-cta {
+  &-area {
+    @media #{$xs} {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
+  @media #{$lg} {
+    min-height: 530px;
+  }
   &-img {
     right: 43px;
     bottom: 0;
+    @media #{$lg} {
+      text-align: center;
+    }
     &-2 {
       right: 0;
       left: 0;
@@ -10,13 +22,27 @@
         mix-blend-mode: luminosity;
       }
     }
+    & img {
+      @media #{$lg} {
+        max-width: 65%;
+      }
+      @media #{$sm} {
+        max-width: 70%;
+      }
+    }
+  }
+  @media #{$xs} {
+    padding: 20px;
   }
 }
 .tp-help {
   & p {
     color: #f8f3e7;
     margin: 0;
-    font-weight: 500;
+    font-weight: 400;
+    @media #{$xxlm} {
+      font-size: 16px;
+    }
   }
   &-title {
     font-weight: 700;
@@ -24,6 +50,10 @@
     letter-spacing: -2px;
   }
   &-list {
+    padding-right: 100px;
+    @media #{$xxlm,$xxll,$xs} {
+      padding-right: 0;
+    }
     &-item {
       display: flex;
       margin-bottom: 14px;
@@ -62,6 +92,23 @@
   &-btn {
     padding: 20.5px 33px;
     border-radius: 0px 0px 12px 0px;
+  }
+  &-top {
+    @media #{$xxlm} {
+      padding-right: 30px;
+      padding-left: 30px;
+      padding-top: 25px;
+    }
+    @media #{$xxll} {
+      padding-right: 25px;
+      padding-left: 25px;
+      padding-top: 25px;
+    }
+    @media #{$xs} {
+      padding-right: 15px;
+      padding-left: 23px;
+      padding-top: 10px;
+    }
   }
 }
 .tp-br-top-bottom-left {

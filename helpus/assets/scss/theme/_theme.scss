@@ -73,6 +73,9 @@ h6 {
   font-weight: 700;
   line-height: 1;
   letter-spacing: -2px;
+  @media #{$xs} {
+    letter-spacing: -1px;
+  }
 }
 
 h1 {
@@ -103,6 +106,9 @@ ul {
   margin: 0px;
   padding: 0px;
 }
+li {
+  list-style: none;
+}
 
 p {
   font-family: var(--tp-font-body);
@@ -112,8 +118,8 @@ p {
   margin-bottom: 15px;
   line-height: 28px;
 }
-span{
-  color: var(--tp-body-color)
+span {
+  color: var(--tp-body-color);
 }
 
 a,
@@ -228,4 +234,3 @@ textarea {
   opacity: 1;
   font-weight: 500;
 }
-

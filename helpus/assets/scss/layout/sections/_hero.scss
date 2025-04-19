@@ -3,6 +3,14 @@
   &-area {
     padding-top: 285px;
     padding-bottom: 345px;
+    @media #{$md} {
+      padding-top: 220px;
+      padding-bottom: 270px;
+    }
+    @media #{$xs} {
+      padding-top: 152px;
+      padding-bottom: 200px;
+    }
   }
   & span {
     font-size: 50px;
@@ -13,6 +21,12 @@
     font-size: 120px;
     letter-spacing: -3.6px;
     line-height: 1;
+    @media #{$lg,$md} {
+      font-size: 92px;
+    }
+    @media #{$xs} {
+      font-size: 55px;
+    }
   }
   &-video {
     & a {
@@ -27,18 +41,45 @@
       text-align: center;
       line-height: 106px;
     }
+    @media #{$md} {
+      margin-top: 20px;
+    }
   }
   &-shape {
     &-1 {
       top: 34%;
       left: 8%;
+      @media #{$xxlm} {
+        top: 13%;
+        left: 1%;
+      }
+      @media #{$xl} {
+        top: 12%;
+        left: 3%;
+      }
+      @media #{$lg,$md} {
+        top: 12%;
+        left: inherit;
+        right: 24%;
+      }
     }
     &-2 {
       top: 63%;
       left: 5%;
+      @media #{$xxlm} {
+        top: 70%;
+      }
     }
     &-bottom {
       bottom: 0;
+      & img {
+        @media #{$md,$xs} {
+          height: 39px;
+        }
+      }
+      @media #{$lg} {
+        bottom: -3px;
+      }
     }
   }
 }

@@ -1,6 +1,112 @@
 @use "../../utils/" as *;
 .tp-footer {
-  &-bg {
-    // mix-blend-mode: luminosity;
+  &-bg-img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background-blend-mode: luminosity;
+    opacity: 0.8;
+  }
+  &-cta {
+    & a {
+      color: #fff;
+      font-size: 18px;
+      font-weight: 600;
+      display: block;
+      margin-bottom: 10px;
+    }
+  }
+  &-col-3 {
+    margin-left: -30px;
+    @media #{$lg,$md,$xs} {
+      margin-left: 0;
+    }
+  }
+
+  &-intro-title {
+    line-height: 1.2;
+    letter-spacing: -0.52px;
+  }
+  &-social {
+    & a {
+      background-color: #fff;
+      width: 44px;
+      height: 44px;
+      border-radius: 12px;
+      display: inline-block;
+      line-height: 38px;
+      text-align: center;
+      margin-right: 3px;
+    }
+  }
+  &-title {
+    color: #fff;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 34px;
+    letter-spacing: -0.6px;
+  }
+  &-widget {
+    & ul {
+      & li {
+        margin-bottom: 6px;
+        & a {
+          color: rgba(255, 255, 255, 0.7);
+          font-size: 16px;
+          font-weight: 500;
+        }
+      }
+    }
+    & p {
+      color: rgba(255, 255, 255, 0.7);
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 26px; /* 162.5% */
+    }
+  }
+  &-copyright {
+    & p {
+      color: rgba(255, 255, 255, 0.7);
+      font-family: var(--tp-font-heading);
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 34px;
+      letter-spacing: -0.36px;
+      & a {
+        color: #fff;
+        font-size: 18px;
+        font-weight: 600;
+        text-decoration-line: underline;
+      }
+    }
+  }
+  &-sep {
+    border-top: 1px solid #f8f3e7;
+  }
+  &-shape {
+    &-pattern {
+      position: absolute;
+      top: -37px;
+      left: 0;
+    }
+    &-1 {
+      left: 10%;
+      top: -5%;
+    }
+    &-2 {
+      left: 3%;
+      bottom: 9%;
+    }
+    &-3 {
+      right: 12%;
+      top: 12%;
+    }
+    &-4 {
+      bottom: -9%;
+      right: -5%;
+    }
   }
 }

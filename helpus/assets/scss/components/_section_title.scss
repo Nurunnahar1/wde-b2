@@ -1,7 +1,21 @@
 @use "../utils/" as *;
 .tp-section {
-  &-info-space {
-    margin-left: 78px;
+  &-info {
+    & p {
+      & br {
+        @media #{$lg,$md,$xs} {
+          display: none;
+        }
+      }
+    }
+    &-space {
+      margin-left: 78px;
+    }
+    &-para {
+      @media #{$lg,$md,$xs} {
+        margin-left: 0;
+      }
+    }
   }
   &-sub-font {
     color: var(--tp-pink-color);
@@ -14,6 +28,9 @@
     font-weight: 700;
     line-height: 1.1;
     letter-spacing: -2.4px;
+    @media #{$xs} {
+      font-size: 42px;
+    }
   }
   &-back-title {
     background: linear-gradient(179deg, #e0deda 39.13%, #f2f0ec 104.12%);
@@ -25,6 +42,18 @@
     bottom: 35%;
     &-2 {
       bottom: -30%;
+    }
+    @media #{$xs} {
+      font-size: 190px;
+    }
+  }
+}
+.tp-blog-area {
+  .tp-section-info {
+    & h2 {
+      @media #{$xl} {
+        font-size: 60px;
+      }
     }
   }
 }

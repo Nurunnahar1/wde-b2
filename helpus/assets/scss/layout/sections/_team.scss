@@ -18,6 +18,9 @@
     }
     & img {
       border-radius: 20px;
+      @media #{$md,$xs} {
+        border-radius: 0;
+      }
     }
   }
   &__content {
@@ -36,14 +39,39 @@
     letter-spacing: -0.52px;
   }
 }
-.tp-team {
-  &-shape {
-    &-1 {
-      top: -53px;
-      right: -12%;
+.tp {
+  &-team {
+    &-shape {
+      &-1 {
+        top: -53px;
+        right: -12%;
+        @media #{$lg} {
+          top: 48px;
+          right: -25%;
+        }
+        @media #{$md} {
+          right: -32%;
+        }
+        @media #{$xs} {
+          right: -50%;
+          top: 1%;
+        }
+      }
+    }
+    &-space {
+      padding-top: 233px;
     }
   }
-  &-space {
-    padding-top: 233px;
+  &-section {
+    &-team {
+      @media #{$lg,$md} {
+        margin-bottom: 15px;
+      }
+    }
+    &-title-team {
+      @media #{$lg} {
+        font-size: 55px;
+      }
+    }
   }
 }

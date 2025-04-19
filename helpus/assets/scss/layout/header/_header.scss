@@ -9,10 +9,17 @@
   &-container {
     max-width: 1424px;
   }
-
-  &-bg {
-    border-radius: 12px;
+  &-toogle {
+    font-size: 34px;
+    color: var(--tp-theme-color);
+    &-wrapper {
+      @media #{$md} {
+        padding-right: 20px;
+        padding-left: 15px;
+      }
+    }
   }
+
   &-logo {
     position: relative;
     z-index: 1;
@@ -28,11 +35,16 @@
         top: 0;
         left: -1px;
         height: 100%;
+        @media #{$md} {
+          left: -16px;
+        }
       }
     }
+    @media #{$md} {
+      margin-right: 21px;
+    }
   }
-  &-menu { 
-
+  &-menu {
     & ul {
       & li {
         display: inline-block;
@@ -90,8 +102,15 @@
   }
   &-content {
     width: 100%;
-  } 
-  &-phone { 
+    @media #{$lg} {
+      padding: 5px 20px 5px 0;
+    }
+    @media #{$xs} {
+      padding: 16.2px 0;
+      padding-right: 15px;
+    }
+  }
+  &-phone {
     & a {
       font-family: var(--tp-font-body);
       font-weight: 600;
@@ -102,4 +121,12 @@
       }
     }
   }
+  &-right {
+    @media #{$lg} {
+      margin-right: 30px;
+    }
+  }
+}
+.tp-white-bg {
+  border-radius: 12px;
 }

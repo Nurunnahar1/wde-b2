@@ -1,12 +1,17 @@
 @use "../../utils/" as *;
-.tp-fact-item {
-  border-left: 1px solid var(--tp-yellow-color);
-  padding-left: 20px;
-  & span {
-    color: #121018;
-  }
-  & p{
-    color: var(--tp-offwhite-color);
+.tp-fact {
+  flex-wrap: wrap;
+  &-item {
+    border-left: 1px solid var(--tp-yellow-color);
+    padding-left: 20px;
+    @media #{$lg,$md} {
+      width: 50%;
+    }
+    & span {
+      color: #121018;
+    }
+    & p {
+      color: var(--tp-offwhite-color);
+    }
   }
 }
- 

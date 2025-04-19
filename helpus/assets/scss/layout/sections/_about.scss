@@ -1,20 +1,58 @@
 @use "../../utils/" as *;
 .tp-about {
+  &-area {
+    padding-bottom: 100px;
+  }
+  &-wrapper {
+    @media #{$xl} {
+      padding-left: 40px;
+    }
+  }
   &-shape {
     mix-blend-mode: exclusion;
     &-1 {
       top: 130px;
       left: 6%;
+      @media #{$xxlm} {
+        top: 130px;
+        left: -2%;
+      }
     }
     &-2 {
       top: -71px;
       right: -12%;
+      @media #{$xxlm} {
+        top: -41px;
+        right: -18%;
+      }
+      @media #{$xl} {
+        top: -74px;
+        right: -18%;
+      }
+      @media #{$lg} {
+        top: -74px;
+        right: -25%;
+      }
+      @media #{$md} {
+        right: -32%;
+      }
+    }
+  }
+  &-img {
+    & img {
+      @media #{$xs} {
+        width: 100%;
+      }
     }
   }
   &-number {
     position: absolute;
     top: 58%;
     right: -27%;
+    @media #{$xs} {
+      top: 50%;
+      right: 1%;
+    }
     &-info {
       position: absolute;
       top: 50%;
@@ -68,6 +106,9 @@
       left: -50px;
       max-width: inherit;
       mix-blend-mode: multiply;
+    }
+    &-img {
+      margin-right: 8px;
     }
   }
 }

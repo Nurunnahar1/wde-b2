@@ -22,12 +22,15 @@ img {
 }
 
 .z-index-1 {
+  position: relative;
   z-index: 1;
 }
 .z-index-2 {
+  position: relative;
   z-index: 2;
 }
 .z-index-3 {
+  position: relative;
   z-index: 3;
 }
 
@@ -89,9 +92,15 @@ img {
 .fns {
   &-50 {
     font-size: 50px;
+    @media #{$xs} {
+      font-size: 45px;
+    }
   }
   &-80 {
     font-size: 80px;
+    @media #{$xs} {
+      font-size: 60px;
+    }
   }
   &-60 {
     font-size: 60px;
@@ -135,6 +144,9 @@ img {
 //height
 .tp-h-630 {
   min-height: 630px;
+  @media #{$xs} {
+    min-height: 552px;
+  }
 }
 // color
 .c-green {
@@ -145,4 +157,7 @@ img {
     max-width: 1400px;
     margin: 0 auto;
   }
+}
+.bg-cover {
+  background-size: cover;
 }

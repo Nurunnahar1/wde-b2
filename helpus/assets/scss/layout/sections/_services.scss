@@ -1,10 +1,13 @@
 @use "../../utils/" as *;
 .tpservices {
   border-radius: 16px 16px 0 0;
-  margin-top: -50%;
+  // margin-top: -50%;
   border-bottom: 4px solid;
   @include tp-transition();
 
+  &-area-margin{
+    margin-top: -140px;
+  }
   &__title {
     font-size: 24px;
     letter-spacing: -1px;

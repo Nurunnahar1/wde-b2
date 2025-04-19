@@ -36,6 +36,17 @@ $(function () {
             prevEl: ".tpcauses__arrow-prev",
             nextEl: ".tpcauses__arrow-next",
         },
+        breakpoints: {
+            300: {
+                slidesPerView: 1,
+            },
+            768: {
+                slidesPerView: 2,
+            },
+            1200: {
+                slidesPerView: 3,
+            },
+        },
     });
     // tptext slider
     var swiper_text = new Swiper(".tptext-slider-active", {
@@ -50,6 +61,7 @@ $(function () {
             delay: 1,
             disableOnInteraction: true,
         },
+
     });
 
     // $(".tptext-slider-active").hover(function () {
@@ -66,5 +78,4 @@ $(function () {
         swiper_text.autoplay.start();
     });
 
-})(jQuery); 
- 
+})(jQuery);
