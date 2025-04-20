@@ -1,0 +1,49 @@
+@use "../../utils/" as *;
+.tp-offcanvas {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 400px;
+  background: #fff;
+  padding: 40px;
+  z-index: 99;
+  height: 100%;
+  &-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &-close-button {
+    font-size: 28px;
+    color: var(--tp-theme-heading);
+  }
+  &-content {
+    & p {
+      font-size: 17px;
+    }
+  }
+  &-gallery {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: auto auto auto auto;
+  }
+  &-info {
+    & span {
+      display: block;
+      margin-bottom: 4px;
+    }
+  }
+  &-social {
+    & a {
+      background-color: var(--tp-primary-color);
+      color: #fff;
+      width: 44px;
+      height: 44px;
+      border-radius: 12px;
+      display: inline-block;
+      line-height: 38px;
+      text-align: center;
+      margin-right: 3px;
+    }
+  }
+}
