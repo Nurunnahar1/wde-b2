@@ -5,9 +5,44 @@
   right: 0;
   width: 400px;
   background: #fff;
-  padding: 40px;
+  padding: 50px 40px;
   z-index: 99;
   height: 100%;
+  @include translateX(100%);
+  @include tp-transition(0.4s);
+  &-open {
+    @include translateX(0);
+  }
+  @media #{$xs} {
+    width: 100%;
+  }
+  @media #{$sm} {
+    width: 400px;
+  }
+  &-overlay {
+    // position: fixed;
+    // width: 100%;
+    // height: 100%;
+    // background: #000;
+    // z-index: 15;
+    // opacity: 0;
+    // transition: 0.3s;
+    // visibility: hidden;
+    position: fixed;
+    width: 0;
+    height: 100%;
+    background: #000;
+    z-index: 15;
+    transition: 0.3s;
+    top: 0;
+    right: 0;
+    opacity: 0.4;
+    &-open {
+      // opacity: 0.4;
+      // visibility: visible;
+      width: 100%;
+    }
+  }
   &-header {
     display: flex;
     justify-content: space-between;

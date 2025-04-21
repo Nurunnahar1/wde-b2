@@ -1694,9 +1694,48 @@ img {
   right: 0;
   width: 400px;
   background: #fff;
-  padding: 40px;
+  padding: 50px 40px;
   z-index: 99;
   height: 100%;
+  -webkit-transform: translateX(100%);
+  -moz-transform: translateX(100%);
+  -ms-transform: translateX(100%);
+  -o-transform: translateX(100%);
+  transform: translateX(100%);
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+}
+.tp-offcanvas-open {
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+  transform: translateX(0);
+}
+@media (max-width: 767px) {
+  .tp-offcanvas {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .tp-offcanvas {
+    width: 400px;
+  }
+}
+.tp-offcanvas-overlay {
+  position: fixed;
+  width: 0;
+  height: 100%;
+  background: #000;
+  z-index: 15;
+  transition: 0.3s;
+  top: 0;
+  right: 0;
+  opacity: 0.4;
+}
+.tp-offcanvas-overlay-open {
+  width: 100%;
 }
 .tp-offcanvas-header {
   display: flex;
