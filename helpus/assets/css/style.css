@@ -1604,6 +1604,20 @@ img {
     margin-right: 21px;
   }
 }
+.tp-header-logo-sep {
+  padding-left: 20px;
+  position: relative;
+}
+.tp-header-logo-sep::after {
+  content: "";
+  background: rgba(8, 55, 44, 0.2);
+  height: 30px;
+  width: 1px;
+  position: absolute;
+  right: -24px;
+  top: 50%;
+  transform: translateY(-50%);
+}
 .tp-header-menu ul li {
   display: inline-block;
   margin-right: 40px;
