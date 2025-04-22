@@ -76,6 +76,10 @@ img {
     border-radius: 30px;
   }
 }
+// color
+.c-green {
+  color: var(--tp-primary-color);
+}
 .bg-gray {
   background-color: var(--tp-gray-color);
 }
@@ -88,6 +92,9 @@ img {
 
 .tp-yellow-bg {
   background-color: var(--tp-yellow-color);
+}
+.bg-theme-2 {
+  background-color: var(--tp-primary-color);
 }
 .fns {
   &-50 {
@@ -148,10 +155,7 @@ img {
     min-height: 552px;
   }
 }
-// color
-.c-green {
-  color: var(--tp-primary-color);
-}
+
 .container {
   &-1400 {
     max-width: 1400px;
