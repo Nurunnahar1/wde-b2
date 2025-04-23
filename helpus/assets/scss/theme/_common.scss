@@ -96,6 +96,7 @@ img {
 .bg-theme-2 {
   background-color: var(--tp-primary-color);
 }
+
 .fns {
   &-50 {
     font-size: 50px;
@@ -165,3 +166,6 @@ img {
 .bg-cover {
   background-size: cover;
 }
+
+
+// sass --watch E:\wde-b2\helpus\assets\scss\main.scss:E:\wde-b2\helpus\assets\css\style.css
