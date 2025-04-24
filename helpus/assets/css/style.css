@@ -157,6 +157,27 @@
   --bs-progress-bg: rgba(248, 243, 231, 0.1);
 }
 
+.tpprogress-2 .progress {
+  --bs-progress-height: 6px;
+  --bs-progress-bar-bg: #073d30;
+  --bs-progress-bg: #f1f1f1;
+}
+.tpprogress-2 label {
+  background: none;
+  color: #073d30;
+  font-weight: 600;
+  font-size: 16px;
+  text-align: right;
+  transform: inherit;
+  padding: 0;
+  margin-bottom: 0px;
+  margin-bottom: 10px;
+  display: block;
+}
+.tpprogress-2 label::before {
+  display: none;
+}
+
 @media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
   .tp-section-info p br {
     display: none;
@@ -2143,6 +2164,9 @@ img {
 .tpcauses__title {
   font-size: 30px;
   line-height: 1;
+}
+.tpcauses__title-2 {
+  font-size: 26px;
 }
 .tpcauses__amount {
   margin-top: 12px;
