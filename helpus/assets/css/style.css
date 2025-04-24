@@ -1351,9 +1351,11 @@ img {
 }
 .fns-16 {
   font-size: 16px;
+  line-height: 24px;
 }
 .fns-20 {
   font-size: 20px;
+  line-height: 32px;
 }
 .fns-26 {
   font-size: 26px;
@@ -1978,13 +1980,20 @@ img {
   font-size: 24px;
   font-family: var(--tp-font-heading);
   color: #073d30;
+  letter-spacing: -0.96px;
 }
 .tp-bottom-quote p a {
   font-weight: 700;
+  display: inline-flex;
+  flex-direction: column;
+  text-align: center;
+}
+.tp-bottom-quote p a svg {
+  width: 100%;
 }
 
 .tp-about-quote p {
-  color: #073D30;
+  color: #073d30;
   font-size: 20px;
   font-weight: 400;
   line-height: 26px;
@@ -2112,6 +2121,10 @@ img {
 }
 .tp-about-fact-img {
   margin-right: 8px;
+}
+.tp-about-2-shape-1 {
+  right: 0;
+  top: -41%;
 }
 
 .tpcauses {

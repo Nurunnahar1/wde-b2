@@ -115,9 +115,11 @@ img {
   }
   &-16 {
     font-size: 16px;
+    line-height: 24px;
   }
   &-20 {
     font-size: 20px;
+    line-height: 32px;
   }
   &-26 {
     font-size: 26px;
@@ -166,6 +168,5 @@ img {
 .bg-cover {
   background-size: cover;
 }
-
 
 // sass --watch E:\wde-b2\helpus\assets\scss\main.scss:E:\wde-b2\helpus\assets\css\style.css
