@@ -49,13 +49,24 @@
     line-height: 1;
     display: inline-block;
   }
+  &-full {
+    background-color: #f8f3e7;
+    color: #073d30;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1;
+    display: block;
+    padding: 17px 10px;
+    border-radius: 12px; 
+  }
 }
 .tp-text-btn-icon {
   color: #121018;
   text-align: center;
-  font-size: 16px; 
-  font-weight: 600; 
-  & svg{
+  font-size: 16px;
+  font-weight: 600;
+  & svg {
     margin-left: 5px;
   }
 }

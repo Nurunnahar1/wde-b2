@@ -58,6 +58,26 @@ $(function () {
             },
         },
     });
+    // tpcharity slider
+    var swiper = new Swiper(".tpcharity-slider-active", {
+        slidesPerView: 3,
+        spaceBetween: 24,
+        navigation: {
+            prevEl: ".tpcauses__arrow-prev",
+            nextEl: ".tpcauses__arrow-next",
+        },
+        breakpoints: {
+            300: {
+                slidesPerView: 1,
+            },
+            768: {
+                slidesPerView: 2,
+            },
+            1200: {
+                slidesPerView: 3,
+            },
+        },
+    });
     // tptext slider
     var swiper_text = new Swiper(".tptext-slider-active", {
         slidesPerView: "auto",

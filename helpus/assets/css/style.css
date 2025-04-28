@@ -40,11 +40,11 @@
   --tp-theme-heading: #121018;
   --tp-body-color: #5A5860;
   --tp-primary-color: #073D30;
-  --tp-green-color: #073D30;
   --tp-header-bg: #ffffff;
   --tp-yellow-color: #FFCF4E;
   --tp-white-color: #fff;
   --tp-gray-color: #F2F0EC;
+  --tp-gray-color2: #F8F3E7;
   --tp-pink-color: #ff73ae;
   --tp-offwhite-color: #454449;
 }
@@ -105,6 +105,17 @@
   font-weight: 600;
   line-height: 1;
   display: inline-block;
+}
+.tp-btn-full {
+  background-color: #f8f3e7;
+  color: #073d30;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1;
+  display: block;
+  padding: 17px 10px;
+  border-radius: 12px;
 }
 
 .tp-text-btn-icon {
@@ -1335,6 +1346,10 @@ img {
   background-color: var(--tp-gray-color);
 }
 
+.bg-gray2 {
+  background-color: var(--tp-gray-color2);
+}
+
 .tp-service-bg {
   background-color: var(--tp-gray-color);
 }
@@ -2032,12 +2047,10 @@ img {
     padding-left: 40px;
   }
 }
-.tp-about-shape {
-  mix-blend-mode: exclusion;
-}
 .tp-about-shape-1 {
   top: 130px;
   left: 6%;
+  mix-blend-mode: exclusion;
 }
 @media only screen and (min-width: 1400px) and (max-width: 1600px) {
   .tp-about-shape-1 {
@@ -2187,6 +2200,7 @@ img {
 }
 .tpcauses__downtext p {
   font-size: 24px;
+  line-height: 1.3;
 }
 
 .swiper.tpcauses-slider-active {
@@ -2211,6 +2225,61 @@ img {
 }
 .tp-arrow-prev {
   margin-right: 6px;
+}
+
+.tpcharity {
+  background-color: #fff;
+  padding: 10px;
+}
+.tpcharity__content {
+  padding: 0 20px;
+}
+.tpcharity__content p {
+  font-size: 16px;
+  line-height: 24px;
+  padding-right: 45px;
+}
+.tpcharity__title {
+  font-size: 26px;
+  font-weight: 600;
+  color: #073d30;
+}
+.tpcharity__amount label {
+  color: #8f9694;
+  font-size: 16px;
+  display: inline-block;
+  line-height: 1;
+}
+.tpcharity__amount span {
+  color: var(--tp-primary-color);
+  font-size: 18px;
+  font-weight: 600;
+}
+.tpcharity__downtext p {
+  color: #073d30;
+  font-family: var(--tp-font-heading);
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 34px;
+  letter-spacing: -0.96px;
+}
+.tpcharity__downtext p a {
+  font-weight: 600;
+  color: #073d30;
+}
+
+.tp-charity-shape-1 {
+  mix-blend-mode: exclusion;
+  left: 10%;
+  top: 13%;
+}
+.tp-charity-shape-2 {
+  right: 0;
+  bottom: 0;
+}
+.tp-charity-shape-3 {
+  left: -38px;
+  bottom: 13%;
 }
 
 .tp-author-shape img {

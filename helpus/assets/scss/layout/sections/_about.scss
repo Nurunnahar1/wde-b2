@@ -9,10 +9,10 @@
     }
   }
   &-shape {
-    mix-blend-mode: exclusion;
     &-1 {
       top: 130px;
       left: 6%;
+      mix-blend-mode: exclusion;
       @media #{$xxlm} {
         top: 130px;
         left: -2%;
@@ -20,7 +20,7 @@
     }
     &-2 {
       top: -71px;
-      right: -12%;
+      right: -12%; 
       @media #{$xxlm} {
         top: -41px;
         right: -18%;
