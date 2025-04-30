@@ -75,3 +75,53 @@
     }
   }
 }
+.tpteamcard {
+  &__img {
+  }
+  &__title {
+    color: #073d30;
+    font-size: 26px;
+    letter-spacing: -0.52px;
+    margin-bottom: 5;
+  }
+  &__content {
+    & span {
+      color: #073d30;
+      font-family: var(--tp-font-heading);
+      font-size: 16px;
+      font-weight: 300;
+      letter-spacing: -0.32px;
+    }
+  }
+}
+.tpteam-banner {
+  background-color: #ffcf4e;
+  &-content {
+  }
+  &-title {
+    color: #073d30;
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: -0.6px;
+    line-height: 34px;
+  }
+  & p {
+    color: #073d30;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+  &-btn {
+    padding-bottom: 40px;
+  }
+}
+.tp-team-quote {
+  margin-top: -20px;
+  & p {
+    letter-spacing: -0.48px;
+    & a {
+      font-weight: 600;
+      letter-spacing: -0.48px;
+    }
+  }
+}

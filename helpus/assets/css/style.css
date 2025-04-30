@@ -76,6 +76,7 @@
 }
 .tp-btn-primary {
   background-color: var(--tp-primary-color);
+  color: #fff;
 }
 .tp-btn-text {
   font-size: 15px;
@@ -2022,11 +2023,6 @@ img {
   margin-bottom: 0;
 }
 
-.tp-bottom-quote {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 .tp-bottom-quote img {
   margin-right: 14px;
 }
@@ -2041,7 +2037,6 @@ img {
   font-weight: 700;
   display: inline-flex;
   flex-direction: column;
-  text-align: center;
 }
 .tp-bottom-quote p a svg {
   width: 100%;
@@ -2676,6 +2671,51 @@ img {
   .tp-section-title-team {
     font-size: 55px;
   }
+}
+
+.tpteamcard__title {
+  color: #073d30;
+  font-size: 26px;
+  letter-spacing: -0.52px;
+  margin-bottom: 5;
+}
+.tpteamcard__content span {
+  color: #073d30;
+  font-family: var(--tp-font-heading);
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: -0.32px;
+}
+
+.tpteam-banner {
+  background-color: #ffcf4e;
+}
+.tpteam-banner-title {
+  color: #073d30;
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: -0.6px;
+  line-height: 34px;
+}
+.tpteam-banner p {
+  color: #073d30;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.tpteam-banner-btn {
+  padding-bottom: 40px;
+}
+
+.tp-team-quote {
+  margin-top: -20px;
+}
+.tp-team-quote p {
+  letter-spacing: -0.48px;
+}
+.tp-team-quote p a {
+  font-weight: 600;
+  letter-spacing: -0.48px;
 }
 
 .tp-join-form input {
