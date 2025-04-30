@@ -14,4 +14,16 @@
       color: var(--tp-offwhite-color);
     }
   }
+  &-area-2 {
+    & h2 {
+      color: #073d30;
+      font-size: 80px;
+      & span {
+        color: #073d30;
+      }
+    }
+    & p {
+      color: #073d30;
+    }
+  }
 }

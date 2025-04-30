@@ -2408,6 +2408,16 @@ img {
 .tp-fact-item p {
   color: var(--tp-offwhite-color);
 }
+.tp-fact-area-2 h2 {
+  color: #073d30;
+  font-size: 80px;
+}
+.tp-fact-area-2 h2 span {
+  color: #073d30;
+}
+.tp-fact-area-2 p {
+  color: #073d30;
+}
 
 @media (max-width: 767px) {
   .tp-cta-area {
