@@ -17,6 +17,9 @@
       color: #121018;
     }
   }
+  &-primary{
+    background-color: var(--tp-primary-color);
+  }
   &-text {
     font-size: 15px;
   }

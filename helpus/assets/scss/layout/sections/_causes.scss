@@ -94,20 +94,7 @@
       font-weight: 600;
     }
   }
-  &__downtext {
-    & p {
-      color: #073d30;
-      font-family: var(--tp-font-heading);
-      font-size: 24px;
-      font-weight: 300;
-      line-height: 34px;
-      letter-spacing: -0.96px;
-      & a {
-        font-weight: 600;
-        color: #073d30;
-      }
-    }
-  }
+
 }
 .tp-charity-shape {
   &-1 {

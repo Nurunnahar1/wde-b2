@@ -1,0 +1,21 @@
+@use "../../utils/" as *;
+.tp-join {
+  &-form {
+    & input {
+      margin-bottom: 8px;
+    }
+  }
+  &text{
+    & p{
+        font-size: 18px;
+        font-weight: 300; 
+        & a{
+             font-size: 18px; 
+             border: 0;
+        }
+    }
+  }
+  &-img{
+    height: 100%;
+  }
+}
