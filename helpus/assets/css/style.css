@@ -2299,6 +2299,10 @@ img {
   left: -38px;
   bottom: 13%;
 }
+.tp-charity-shape-top {
+  top: 0;
+  left: 0;
+}
 
 .tp-author-shape img {
   border-radius: 55px;
@@ -2757,6 +2761,61 @@ img {
 }
 .tp-join-img {
   height: 100%;
+}
+
+.tp-step {
+  position: relative;
+}
+.tp-step-number {
+  font-size: 26px;
+  color: #073d30;
+  background: #f8f3e7;
+  width: 80px;
+  height: 80px;
+  text-align: center;
+  line-height: 80px;
+  border-radius: 100%;
+  display: inline-block;
+}
+.tp-step-title {
+  color: #f8f3e7;
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: -1.04px;
+}
+.tp-step-content p {
+  color: rgba(248, 243, 231, 0.6);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+}
+.tp-step-arrow {
+  position: absolute;
+  right: -70px;
+  top: 25px;
+}
+.tp-step-shape-1 {
+  top: -45px;
+  left: 0;
+}
+.tp-step-shape-2 {
+  bottom: -45px;
+  left: 0;
+}
+.tp-step-shape-3 {
+  top: 13%;
+  left: 20%;
+}
+.tp-step-shape-4 {
+  top: 17%;
+  right: 16%;
+}
+
+.tp__downtext-step-down {
+  display: inline-block;
+  border: 1px solid rgba(248, 243, 231, 0.1);
+  padding: 14.5px 20px;
+  border-radius: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */
