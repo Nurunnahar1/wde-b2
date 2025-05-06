@@ -2384,6 +2384,12 @@ img {
   align-items: center;
 }
 
+.tp-text-scroll-bg {
+  -webkit-mask-image: url(../img/brand/brand-scrol-bg.png);
+  mask-image: url(../img/brand/brand-scrol-bg.png);
+  mask-repeat: no-repeat;
+}
+
 .tp-nav-tabs {
   display: flex;
   flex-wrap: wrap;
