@@ -2,6 +2,7 @@
 .tpteam {
   &__img {
     box-shadow: 0px 36px 16px -24px rgba(22, 18, 5, 0.08);
+
     &::before {
       content: "";
       position: absolute;
@@ -17,7 +18,7 @@
       );
     }
     & img {
-      border-radius: 20px;
+      border-radius: 20px 20px 0 0;
       @media #{$md,$xs} {
         border-radius: 0;
       }
@@ -37,6 +38,12 @@
   &__title {
     color: var(--tp-white-color);
     letter-spacing: -0.52px;
+  }
+  &-banner {
+    border-radius: 20px 20px 0px 0px;
+    &-img {
+      border-radius: 20px 20px 0px 0px;
+    }
   }
 }
 .tp {
@@ -77,6 +84,20 @@
 }
 .tpteamcard {
   &__img {
+    &::before {
+      border-radius: 20px 20px 0px 0px;
+      background: linear-gradient(
+        180deg,
+        rgba(18, 16, 24, 0) 38.28%,
+        #121018 100%
+      );
+      content: "";
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      opacity: 0;
+      visibility: hidden;
+    }
   }
   &__title {
     color: #073d30;
@@ -92,6 +113,40 @@
       font-weight: 300;
       letter-spacing: -0.32px;
     }
+  }
+  &__social {
+    position: absolute;
+    bottom: 60px;
+    text-align: center;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    visibility: hidden;
+    @include tp-transition();
+    & a {
+      background-color: #fff;
+      width: 42px;
+      height: 42px;
+      border-radius: 100%;
+      display: inline-block;
+      line-height: 39px;
+      text-align: center;
+      margin: 0 1px;
+    }
+  }
+  &:hover {
+    & .tpteamcard__social {
+      opacity: 1;
+      visibility: visible;
+      bottom: 45px;
+    }
+    & .tpteamcard__img::before {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+  &-main-img {
+    border-radius: 20px 20px 0px 0px;
   }
 }
 .tpteam-banner {
@@ -116,7 +171,7 @@
   }
 }
 .tp-team-quote {
-  margin-top: -20px;
+  margin-top: -45px;
   & p {
     letter-spacing: -0.48px;
     & a {
@@ -124,4 +179,9 @@
       letter-spacing: -0.48px;
     }
   }
+}
+.tp-team-shape {
+  bottom: 0;
+  left: 0;
+  width: 100%;
 }

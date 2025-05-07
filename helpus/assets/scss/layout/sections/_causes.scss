@@ -94,7 +94,12 @@
       font-weight: 600;
     }
   }
-
+  &-shape {
+    & img {
+      bottom: 0;
+      left: 0;
+    }
+  }
 }
 .tp-charity-shape {
   &-1 {
@@ -110,7 +115,7 @@
     left: -38px;
     bottom: 13%;
   }
-  &-top{
+  &-top {
     top: 0;
     left: 0;
   }

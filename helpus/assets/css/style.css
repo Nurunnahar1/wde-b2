@@ -2291,6 +2291,10 @@ img {
   font-size: 18px;
   font-weight: 600;
 }
+.tpcharity-shape img {
+  bottom: 0;
+  left: 0;
+}
 
 .tp-charity-shape-1 {
   mix-blend-mode: exclusion;
@@ -2657,7 +2661,7 @@ img {
   background: linear-gradient(180deg, rgba(7, 4, 16, 0) 60.71%, #070410 99.3%);
 }
 .tpteam__img img {
-  border-radius: 20px;
+  border-radius: 20px 20px 0 0;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
   .tpteam__img img {
@@ -2678,6 +2682,12 @@ img {
 .tpteam__title {
   color: var(--tp-white-color);
   letter-spacing: -0.52px;
+}
+.tpteam-banner {
+  border-radius: 20px 20px 0px 0px;
+}
+.tpteam-banner-img {
+  border-radius: 20px 20px 0px 0px;
 }
 
 .tp-team-shape-1 {
@@ -2715,6 +2725,16 @@ img {
   }
 }
 
+.tpteamcard__img::before {
+  border-radius: 20px 20px 0px 0px;
+  background: linear-gradient(180deg, rgba(18, 16, 24, 0) 38.28%, #121018 100%);
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+}
 .tpteamcard__title {
   color: #073d30;
   font-size: 26px;
@@ -2727,6 +2747,40 @@ img {
   font-size: 16px;
   font-weight: 300;
   letter-spacing: -0.32px;
+}
+.tpteamcard__social {
+  position: absolute;
+  bottom: 60px;
+  text-align: center;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+.tpteamcard__social a {
+  background-color: #fff;
+  width: 42px;
+  height: 42px;
+  border-radius: 100%;
+  display: inline-block;
+  line-height: 39px;
+  text-align: center;
+  margin: 0 1px;
+}
+.tpteamcard:hover .tpteamcard__social {
+  opacity: 1;
+  visibility: visible;
+  bottom: 45px;
+}
+.tpteamcard:hover .tpteamcard__img::before {
+  opacity: 1;
+  visibility: visible;
+}
+.tpteamcard-main-img {
+  border-radius: 20px 20px 0px 0px;
 }
 
 .tpteam-banner {
@@ -2750,7 +2804,7 @@ img {
 }
 
 .tp-team-quote {
-  margin-top: -20px;
+  margin-top: -45px;
 }
 .tp-team-quote p {
   letter-spacing: -0.48px;
@@ -2758,6 +2812,12 @@ img {
 .tp-team-quote p a {
   font-weight: 600;
   letter-spacing: -0.48px;
+}
+
+.tp-team-shape {
+  bottom: 0;
+  left: 0;
+  width: 100%;
 }
 
 .tp-join-form input {
