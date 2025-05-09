@@ -55,6 +55,22 @@ $(function () {
             },
             1200: {
                 slidesPerView: 3,
+            }, 
+        },
+    });
+    // tplpblog slider
+    var swiper = new Swiper(".tplpblog-slider-active", {
+        slidesPerView: 3,
+        spaceBetween: 30, 
+        breakpoints: {
+            300: {
+                slidesPerView: 1,
+            },
+            768: {
+                slidesPerView: 2,
+            },
+            1200: {
+                slidesPerView: 3,
             },
         },
     });

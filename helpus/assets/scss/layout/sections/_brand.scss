@@ -4,15 +4,15 @@
     font-size: 80px;
     font-weight: 300;
     margin-bottom: 0;
-    
+
     padding-bottom: 30px;
     padding-top: 12px;
   }
   & img {
     margin-right: 30px;
   }
-  &-rotate {
-    transform: rotate(1deg);
+  &-2 {
+    padding: 46px 0;
   }
 }
 
@@ -32,7 +32,4 @@
   align-items: center;
 }
 .tp-text-scroll-bg {
-  -webkit-mask-image: url(../img/brand/brand-scrol-bg.png); 
-  mask-image: url(../img/brand/brand-scrol-bg.png);
-  mask-repeat: no-repeat; 
 }

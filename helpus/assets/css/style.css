@@ -110,6 +110,11 @@
   line-height: 1;
   display: inline-block;
 }
+.tp-btn-sm-theme {
+  background-color: #ffcf4e;
+  color: #073d30;
+  padding: 12px 20px;
+}
 .tp-btn-full {
   background-color: #f8f3e7;
   color: #073d30;
@@ -1530,6 +1535,57 @@ img {
   }
 }
 
+.tplpblog__img {
+  width: 270px;
+  flex: 0 0 auto;
+}
+.tplpblog__content {
+  padding: 40px;
+}
+.tplpblog__content p {
+  color: #5c6160;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.tplpblog__title {
+  color: #073d30;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.3;
+  letter-spacing: -0.48px;
+}
+.tplpblog__cat a {
+  color: #073d30;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+  text-transform: uppercase;
+  background: #f8f3e7;
+  padding: 1px 12.5px;
+  display: inline-block;
+  border-radius: 8px;
+}
+.tplpblog-img-shape {
+  position: absolute;
+  right: -11px;
+  top: 0;
+}
+
+.tplpblog-slider-active {
+  margin-right: -624px;
+}
+
+.pt-360 {
+  padding-top: 360px;
+}
+
+.tp-blog-shape-top {
+  top: 0;
+  left: 0;
+}
+
 .tp-footer-bg-img {
   position: absolute;
   height: 100%;
@@ -1629,6 +1685,9 @@ img {
   right: -5%;
 }
 
+.tp-header {
+  border-radius: 12px;
+}
 .tp-header-transparent {
   position: absolute !important;
   top: 26px;
@@ -1768,10 +1827,6 @@ img {
   .tp-header-right {
     margin-right: 30px;
   }
-}
-
-.tp-white-bg {
-  border-radius: 12px;
 }
 
 .tp-offcanvas {
@@ -2366,8 +2421,8 @@ img {
 .tp-text-slider img {
   margin-right: 30px;
 }
-.tp-text-slider-rotate {
-  transform: rotate(1deg);
+.tp-text-slider-2 {
+  padding: 46px 0;
 }
 
 .slide-transition {
@@ -2386,12 +2441,6 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.tp-text-scroll-bg {
-  -webkit-mask-image: url(../img/brand/brand-scrol-bg.png);
-  mask-image: url(../img/brand/brand-scrol-bg.png);
-  mask-repeat: no-repeat;
 }
 
 .tp-nav-tabs {
@@ -2946,6 +2995,12 @@ img {
   border-radius: 90px;
   right: 13%;
   bottom: -6%;
+}
+
+.tpjoin-area-margin {
+  margin-bottom: -220px;
+  position: relative;
+  z-index: 2;
 }
 
 /*# sourceMappingURL=style.css.map */

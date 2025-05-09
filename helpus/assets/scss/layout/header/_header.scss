@@ -1,5 +1,6 @@
 @use "../../utils/" as *;
 .tp-header {
+  border-radius: 12px;
   &-transparent {
     position: absolute !important;
     top: 26px;
@@ -140,7 +141,4 @@
       margin-right: 30px;
     }
   }
-}
-.tp-white-bg {
-  border-radius: 12px;
 }
