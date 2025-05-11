@@ -1684,6 +1684,39 @@ img {
   bottom: -9%;
   right: -5%;
 }
+.tp-footer-shape-top {
+  top: -41px;
+  left: 0;
+}
+.tp-footer-gallery img {
+  width: 100%;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.tp-footer-2-col-3 {
+  padding-left: 40px;
+}
+.tp-footer-2-col-4 {
+  margin-left: -28px;
+}
+
+.tp-footer-top-content {
+  border-bottom: 1px solid rgba(248, 243, 231, 0.06);
+}
+.tp-footer-top-title {
+  color: #f8f3e7;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 64px;
+  letter-spacing: -1px;
+  margin-bottom: 70px;
+}
+.tp-footer-top-title a {
+  color: #ffcf4e;
+  text-decoration-line: underline;
+}
 
 .tp-header {
   border-radius: 12px;
