@@ -37,6 +37,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Sue+Ellen+Francisco&display=swap");
 :root {
   --tp-theme-color: #063D30;
+  --tp-theme-3: #055C4D;
   --tp-theme-heading: #121018;
   --tp-body-color: #5A5860;
   --tp-primary-color: #073D30;
@@ -1380,6 +1381,10 @@ img {
   background-color: var(--tp-primary-color);
 }
 
+.bg-theme-3 {
+  background-color: var(--tp-theme-3);
+}
+
 .fns-50 {
   font-size: 50px;
 }
@@ -1860,6 +1865,59 @@ img {
   .tp-header-right {
     margin-right: 30px;
   }
+}
+
+.tp-meta-dvir {
+  width: 1px;
+  height: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  margin: 0 22px;
+  display: inline-block;
+}
+
+.tp-header-full-row {
+  display: flex;
+}
+.tp-header-full-logo {
+  background-color: #055c4d;
+  padding-left: 80px;
+}
+.tp-header-full-left {
+  width: 286px;
+  flex: 0 0 auto;
+}
+.tp-header-full-middle {
+  width: 100%;
+}
+.tp-header-full-right {
+  background-color: bisque;
+  width: 260px;
+  flex: 0 0 auto;
+}
+.tp-header-full-btn a {
+  color: #ffcf4e;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: -0.36px;
+}
+.tp-header-full-meta {
+  display: flex;
+  align-items: center;
+  padding: 11px 0;
+}
+.tp-header-full-meta span {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 14px;
+  font-weight: 500;
+}
+.tp-header-full-meta span svg {
+  margin-right: 5px;
+}
+
+.tp-header-lang ul li a {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 14px;
 }
 
 .tp-offcanvas {

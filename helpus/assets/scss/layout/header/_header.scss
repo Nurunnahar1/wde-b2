@@ -142,3 +142,63 @@
     }
   }
 }
+.tp-meta-dvir {
+  width: 1px;
+  height: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  margin: 0 22px;
+  display: inline-block;
+}
+.tp-header-full {
+  &-row {
+    display: flex;
+  }
+  &-logo {
+    background-color: #055c4d;
+    padding-left: 80px;
+  }
+  &-left {
+    width: 286px;
+    flex: 0 0 auto;
+  }
+  &-middle {
+    width: 100%;
+  }
+  &-right {
+    background-color: bisque;
+    width: 260px;
+    flex: 0 0 auto;
+  }
+  &-btn {
+    & a {
+      color: #ffcf4e;
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 20px;
+      letter-spacing: -0.36px;
+    }
+  }
+  &-meta {
+    display: flex;
+    align-items: center;
+    padding: 11px 0;
+    & span {
+      color: rgba(255, 255, 255, 0.8);
+      font-size: 14px;
+      font-weight: 500;
+      & svg {
+        margin-right: 5px;
+      }
+    }
+  }
+}
+.tp-header-lang {
+  & ul {
+    & li {
+      & a {
+        color: rgba(255, 255, 255, 0.8);
+        font-size: 14px;
+      }
+    }
+  }
+}
