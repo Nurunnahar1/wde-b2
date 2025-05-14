@@ -154,12 +154,32 @@
     display: flex;
   }
   &-logo {
-    background-color: #055c4d;
+    background-color: var(--tp-theme-3);
     padding-left: 80px;
+    &-shape {
+      border-style: solid;
+      border-width: 120px 0 0 86px;
+      border-color: transparent transparent transparent var(--tp-theme-3);
+      transform: rotate(0deg);
+      top: 0;
+      right: -85px;
+    }
+    &-line {
+      height: calc(100% + 27px);
+      width: 6px;
+      background: #ffcf4e;
+      top: -2px;
+      transform: rotate(-36deg);
+      right: -3px;
+      transform-origin: top right;
+    }
   }
   &-left {
     width: 286px;
     flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+    position: relative;
   }
   &-middle {
     width: 100%;
@@ -195,9 +215,33 @@
 .tp-header-lang {
   & ul {
     & li {
+      position: relative;
+      line-height: 1;
       & a {
         color: rgba(255, 255, 255, 0.8);
         font-size: 14px;
+        line-height: 1;
+      }
+      & ul {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background: aqua;
+        width: 70px;
+        padding: 12px 13px;
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.3s;
+        & li {
+          & a {
+          }
+        }
+      }
+      &:hover {
+        & ul {
+          opacity: 1;
+          visibility: visible;
+        }
       }
     }
   }
