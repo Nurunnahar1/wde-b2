@@ -150,12 +150,15 @@
   display: inline-block;
 }
 .tp-header-full {
+  &-menu {
+    border-radius: 0 12px 12px 0;
+  }
   &-row {
     display: flex;
   }
   &-logo {
     background-color: var(--tp-theme-3);
-    padding-left: 80px;
+    padding-left: 60px;
     &-shape {
       border-style: solid;
       border-width: 120px 0 0 86px;
@@ -175,7 +178,7 @@
     }
   }
   &-left {
-    width: 286px;
+    width: 260px;
     flex: 0 0 auto;
     display: flex;
     align-items: center;
@@ -185,19 +188,10 @@
     width: 100%;
   }
   &-right {
-    background-color: bisque;
     width: 260px;
     flex: 0 0 auto;
   }
-  &-btn {
-    & a {
-      color: #ffcf4e;
-      font-size: 18px;
-      font-weight: 600;
-      line-height: 20px;
-      letter-spacing: -0.36px;
-    }
-  }
+
   &-meta {
     display: flex;
     align-items: center;
@@ -212,6 +206,25 @@
     }
   }
 }
+.tp-header-fullbtn {
+  color: #ffcf4e;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: -0.36px;
+}
+.tp-header-full-btn {
+  padding-right: 20px;
+  & svg {
+    position: absolute;
+    top: -19px;
+    left: 0;
+    right: 0;
+    display: inline-block;
+    margin: auto;
+    width: auto;
+  }
+}
 .tp-header-lang {
   & ul {
     & li {
@@ -223,24 +236,16 @@
         line-height: 1;
       }
       & ul {
+        display: none;
         position: absolute;
-        top: 100%;
+        top: 177%;
         left: 0;
         background: aqua;
         width: 70px;
         padding: 12px 13px;
-        opacity: 0;
-        visibility: hidden;
-        transition: 0.3s;
         & li {
           & a {
           }
-        }
-      }
-      &:hover {
-        & ul {
-          opacity: 1;
-          visibility: visible;
         }
       }
     }

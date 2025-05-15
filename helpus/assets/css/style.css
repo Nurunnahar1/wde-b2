@@ -34,13 +34,14 @@
 /*----------------------------------------*/
 /*  1.1 Theme Default
 /*----------------------------------------*/
-@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Sue+Ellen+Francisco&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Sue+Ellen+Francisco&family=Tillana:wght@400;500;600;700;800&display=swap");
 :root {
   --tp-theme-color: #063D30;
   --tp-theme-3: #055C4D;
   --tp-theme-heading: #121018;
   --tp-body-color: #5A5860;
   --tp-primary-color: #073D30;
+  --tp-primary-color-2: #FE4E15;
   --tp-header-bg: #ffffff;
   --tp-yellow-color: #FFCF4E;
   --tp-white-color: #fff;
@@ -52,7 +53,9 @@
 
 :root {
   --tp-font-heading: "Fraunces", serif;
-  --tp-sub-heading:"Sue Ellen Francisco", serif;
+  --tp-font-heading-2: "Libre Baskerville", serif;
+  --tp-sub-heading: "Sue Ellen Francisco", serif;
+  --tp-sub-heading-2: "Tillana", system-ui;
   --tp-font-body: "Inter", serif;
   --tp-font-flaticon: "flaticon";
 }
@@ -126,6 +129,17 @@
   display: block;
   padding: 17px 10px;
   border-radius: 12px;
+}
+.tp-btn-red {
+  display: inline-block;
+  color: var(--tp-white-color);
+  background: var(--tp-primary-color-2);
+  padding: 13px 22px;
+  border-radius: 30px;
+  line-height: 1;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 600;
 }
 
 .tp-text-btn-icon {
@@ -1875,12 +1889,15 @@ img {
   display: inline-block;
 }
 
+.tp-header-full-menu {
+  border-radius: 0 12px 12px 0;
+}
 .tp-header-full-row {
   display: flex;
 }
 .tp-header-full-logo {
   background-color: var(--tp-theme-3);
-  padding-left: 80px;
+  padding-left: 60px;
 }
 .tp-header-full-logo-shape {
   border-style: solid;
@@ -1900,7 +1917,7 @@ img {
   transform-origin: top right;
 }
 .tp-header-full-left {
-  width: 286px;
+  width: 260px;
   flex: 0 0 auto;
   display: flex;
   align-items: center;
@@ -1910,16 +1927,8 @@ img {
   width: 100%;
 }
 .tp-header-full-right {
-  background-color: bisque;
   width: 260px;
   flex: 0 0 auto;
-}
-.tp-header-full-btn a {
-  color: #ffcf4e;
-  font-size: 18px;
-  font-weight: 600;
-  line-height: 20px;
-  letter-spacing: -0.36px;
 }
 .tp-header-full-meta {
   display: flex;
@@ -1935,6 +1944,27 @@ img {
   margin-right: 5px;
 }
 
+.tp-header-fullbtn {
+  color: #ffcf4e;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: -0.36px;
+}
+
+.tp-header-full-btn {
+  padding-right: 20px;
+}
+.tp-header-full-btn svg {
+  position: absolute;
+  top: -19px;
+  left: 0;
+  right: 0;
+  display: inline-block;
+  margin: auto;
+  width: auto;
+}
+
 .tp-header-lang ul li {
   position: relative;
   line-height: 1;
@@ -1945,21 +1975,14 @@ img {
   line-height: 1;
 }
 .tp-header-lang ul li ul {
+  display: none;
   position: absolute;
-  top: 100%;
+  top: 177%;
   left: 0;
   background: aqua;
   width: 70px;
   padding: 12px 13px;
-  opacity: 0;
-  visibility: hidden;
-  transition: 0.3s;
 }
-.tp-header-lang ul li:hover ul {
-  opacity: 1;
-  visibility: visible;
-}
-
 .tp-offcanvas {
   position: fixed;
   top: 0;
@@ -2919,7 +2942,7 @@ img {
   color: #073d30;
   font-size: 26px;
   letter-spacing: -0.52px;
-  margin-bottom: 5;
+  margin-bottom: 5px;
 }
 .tpteamcard__content span {
   color: #073d30;
@@ -3132,6 +3155,18 @@ img {
   margin-bottom: -220px;
   position: relative;
   z-index: 2;
+}
+
+.tp-slider-item {
+  height: 810px;
+}
+.tp-slider-title {
+  color: #fff;
+  font-family: var(--tp-font-heading-2);
+  font-size: 100px;
+  font-weight: 700;
+  line-height: 110px;
+  letter-spacing: -2px;
 }
 
 /*# sourceMappingURL=style.css.map */

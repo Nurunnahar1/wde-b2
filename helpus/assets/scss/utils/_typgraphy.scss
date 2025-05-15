@@ -1,8 +1,10 @@
-$font-url : 'https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Sue+Ellen+Francisco&display=swap';
- 
+$font-url: "https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Sue+Ellen+Francisco&family=Tillana:wght@400;500;600;700;800&display=swap";
+
 :root {
-    --tp-font-heading: "Fraunces", serif;
-    --tp-sub-heading:"Sue Ellen Francisco", serif;
-    --tp-font-body: "Inter", serif;
-    --tp-font-flaticon: "flaticon";
+  --tp-font-heading: "Fraunces", serif;
+  --tp-font-heading-2: "Libre Baskerville", serif;
+  --tp-sub-heading: "Sue Ellen Francisco", serif;
+  --tp-sub-heading-2: "Tillana", system-ui;
+  --tp-font-body: "Inter", serif;
+  --tp-font-flaticon: "flaticon";
 }

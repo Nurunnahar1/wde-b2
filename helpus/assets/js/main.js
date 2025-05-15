@@ -13,6 +13,11 @@ $(function () {
     });
 
 
+    $(".tp-lang-toggle").on('click', function () {
+        $(".tp-lang-submenu").slideToggle(); 
+    });
+
+
     // data bg img
     $("[data-bg-img]").each(function () {
         $(this).css("background-image", "url(" + $(this).attr("data-bg-img") + ")");

@@ -1,0 +1,16 @@
+@use "../../utils/" as *;
+.tp-slider {
+  &-item {
+    height: 810px;
+  }
+  &-title {
+    color: #fff;
+    font-family: var(--tp-font-heading-2);
+    font-size: 100px;
+    font-weight: 700;
+    line-height: 110px;
+    letter-spacing: -2px;
+  }
+  &-subtitle {
+  }
+}
