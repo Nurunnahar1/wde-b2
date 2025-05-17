@@ -72,13 +72,18 @@
   &-red {
     display: inline-block;
     color: var(--tp-white-color);
-    background: var(--tp-primary-color-2);
+    background-color: var(--tp-primary-color-2);
     padding: 13px 22px;
     border-radius: 30px;
     line-height: 1;
     font-size: 14px;
     text-transform: uppercase;
     font-weight: 600;
+    &-xl{
+      padding: 22px 56px;
+      color: var(--tp-white-color); 
+      background-color: var(--tp-primary-color-2);
+    }
   }
 }
 .tp-text-btn-icon {

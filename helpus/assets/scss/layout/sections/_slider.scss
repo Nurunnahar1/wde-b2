@@ -1,16 +1,56 @@
 @use "../../utils/" as *;
 .tp-slider {
+    &-arrow{
+        position: absolute;
+        top: 50%;
+        left: 64px;
+        height: 54px;
+        width: 54px;
+        color: #fff;
+        z-index: 99;
+        font-size: 16px;
+        border-radius: 30px;
+        border: 1px solid rgba(255, 255 ,255,.1);
+        &-next{
+            left: auto;
+            right: 64px;
+        }
+    }
   &-item {
     height: 810px;
+    position: relative;
+    &::before{
+        position: absolute;
+        content: "";
+        height: 100%;
+        width: 100%;
+        background: #000;
+        opacity: .4;
+    }
   }
   &-title {
     color: #fff;
-    font-family: var(--tp-font-heading-2);
     font-size: 100px;
     font-weight: 700;
-    line-height: 110px;
+    line-height: 1.2;
     letter-spacing: -2px;
   }
   &-subtitle {
+    color: #ffcf4e;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    & i {
+      width: 70px;
+      height: 1px;
+      background-color: #ffcf4e;
+      display: inline-block;
+      margin: 0 18px;
+    }
+  }
+  &-btn {
   }
 }

@@ -63,6 +63,14 @@ $(function () {
             }, 
         },
     });
+    // tphero slider
+    var swiper = new Swiper(".tphero-slider-active", {
+        slidesPerView: 1, 
+        navigation: {
+            prevEl: ".tpslider__arrow-prev",
+            nextEl: ".tpslider__arrow-next",
+        } 
+    });
     // tplpblog slider
     var swiper = new Swiper(".tplpblog-slider-active", {
         slidesPerView: 3,

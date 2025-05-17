@@ -53,11 +53,18 @@ img {
 .p-absolute {
   position: absolute;
 }
+//fonts
 .tp-sub-font {
   font-family: var(--tp-sub-heading);
 }
 .tp-heading-font {
   font-family: var(--tp-font-heading);
+}
+.tp-sub-font-2 {
+  font-family: var(--tp-sub-heading-2);
+}
+.tp-heading-font-2 {
+  font-family: var(--tp-font-heading-2);
 }
 .pb-130 {
   padding-bottom: 130px;
