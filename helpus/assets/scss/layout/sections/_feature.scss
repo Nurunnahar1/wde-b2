@@ -1,0 +1,43 @@
+@use "../../utils/" as *;
+.tpfeature {
+  border-radius: 20px;
+  background: #ffdeef;
+  padding: 40px;
+
+  &__icon {
+    & img {
+      position: absolute;
+      right: 9%;
+      bottom: 9%;
+      display: inline-block;
+    }
+  }
+  & span {
+  }
+  &__title {
+    font-size: 28px;
+    letter-spacing: -0.6px;
+  }
+  & p {
+    color: #545258;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    padding-right: 62px;
+  }
+  &-url {
+    & a {
+      width: 44px;
+      height: 44px;
+      transform: rotate(-45deg);
+      display: inline-block;
+      border: 1.5px solid rgba(18, 16, 24, 0.08);
+
+      border-radius: 30px;
+      //   line-height: -2;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}

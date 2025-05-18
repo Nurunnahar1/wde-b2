@@ -141,6 +141,9 @@ img {
   &-26 {
     font-size: 26px;
   }
+  &-28 {
+    font-size: 28px;
+  }
   &-34 {
     font-size: 34px;
   }
@@ -201,4 +204,16 @@ img {
   }
 }
 
-// sass --watch E:\wde-b2\helpus\assets\scss\main.scss:E:\wde-b2\helpus\assets\css\style.css
+.container {
+  &-1400 {
+    max-width: 1430px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+}
+//line height
+.lh {
+  &-60 {
+    line-height: 60px;
+  }
+}
