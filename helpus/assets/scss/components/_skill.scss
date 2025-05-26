@@ -64,3 +64,42 @@
     }
   }
 }
+//circle progressbar
+.tpcharity__circle {
+	width: 90px;
+	height: 90px;
+	background: #055C4D;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  position: absolute;
+  bottom: -45px;
+  right: 35px;
+}
+.progress-circle {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  background: conic-gradient(#fff 0% 75%, #377d71 75% 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  font-size: 20px;
+  color: #fff;
+  position: relative;
+  font-weight: 700;
+}
+.progress-circle::before {
+  content: "";
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  background: #055c4d;
+  border-radius: 50%;
+}
+.progress-circle span {
+  position: absolute;
+  font-weight: bold; 
+  color: #fff;
+}

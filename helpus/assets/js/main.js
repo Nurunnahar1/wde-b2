@@ -14,7 +14,7 @@ $(function () {
 
 
     $(".tp-lang-toggle").on('click', function () {
-        $(".tp-lang-submenu").slideToggle(); 
+        $(".tp-lang-submenu").slideToggle();
     });
 
 
@@ -42,6 +42,10 @@ $(function () {
         type: 'iframe'
         // other options
     });
+    // data circle bar
+    $("[data-circle-bar]").each(function () {
+        $(this).css("background", $(this).attr("data-circle-bar"))
+    })
 
     // tpcauses slider
     var swiper = new Swiper(".tpcauses-slider-active", {
@@ -60,21 +64,21 @@ $(function () {
             },
             1200: {
                 slidesPerView: 3,
-            }, 
+            },
         },
     });
     // tphero slider
     var swiper = new Swiper(".tphero-slider-active", {
-        slidesPerView: 1, 
+        slidesPerView: 1,
         navigation: {
             prevEl: ".tpslider__arrow-prev",
             nextEl: ".tpslider__arrow-next",
-        } 
+        }
     });
     // tplpblog slider
     var swiper = new Swiper(".tplpblog-slider-active", {
         slidesPerView: 3,
-        spaceBetween: 30, 
+        spaceBetween: 30,
         breakpoints: {
             300: {
                 slidesPerView: 1,

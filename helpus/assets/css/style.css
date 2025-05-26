@@ -130,6 +130,12 @@
   padding: 17px 10px;
   border-radius: 12px;
 }
+.tp-btn-full-red {
+  background-color: #fe4e15;
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+}
 .tp-btn-red {
   display: inline-block;
   color: var(--tp-white-color);
@@ -219,6 +225,48 @@
 }
 .tpprogress-2 label::before {
   display: none;
+}
+
+.tpcharity__circle {
+  width: 90px;
+  height: 90px;
+  background: #055C4D;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: -45px;
+  right: 35px;
+}
+
+.progress-circle {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  background: conic-gradient(#fff 0% 75%, #377d71 75% 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  color: #fff;
+  position: relative;
+  font-weight: 700;
+}
+
+.progress-circle::before {
+  content: "";
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  background: #055c4d;
+  border-radius: 50%;
+}
+
+.progress-circle span {
+  position: absolute;
+  font-weight: bold;
+  color: #fff;
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
@@ -2551,6 +2599,10 @@ img {
   background-color: #fff;
   padding: 10px;
 }
+.tpcharity__thumb-2 img {
+  border-radius: 20px 20px 0 0;
+  width: 100%;
+}
 .tpcharity__content {
   padding: 0 20px;
 }
@@ -2559,10 +2611,19 @@ img {
   line-height: 24px;
   padding-right: 45px;
 }
+.tpcharity__content-2 {
+  padding: 35px;
+}
 .tpcharity__title {
   font-size: 26px;
   font-weight: 600;
   color: #073d30;
+}
+.tpcharity__title-2 {
+  font-size: 28px;
+  color: #121018;
+  letter-spacing: -0.56px;
+  font-weight: 700;
 }
 .tpcharity__amount label {
   color: #8f9694;
@@ -2578,6 +2639,19 @@ img {
 .tpcharity-shape img {
   bottom: 0;
   left: 0;
+}
+.tpcharity-2 {
+  border-radius: 20px;
+}
+.tpcharity__cat a {
+  padding: 6px 18px;
+  border-radius: 28px;
+  border: 1px solid #ffcf4e;
+  background: #ffcf4e;
+  font-size: 11px;
+  font-weight: 600;
+  color: #121018;
+  text-transform: uppercase;
 }
 
 .tp-charity-shape-1 {
