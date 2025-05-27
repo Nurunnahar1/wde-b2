@@ -1482,6 +1482,9 @@ img {
 .fns-60 {
   font-size: 60px;
 }
+.fns-50 {
+  font-size: 50px;
+}
 .fns-16 {
   font-size: 16px;
   line-height: 24px;
@@ -1496,6 +1499,9 @@ img {
 }
 .fns-26 {
   font-size: 26px;
+}
+.fns-24 {
+  font-size: 24px;
 }
 .fns-28 {
   font-size: 28px;
@@ -3187,6 +3193,62 @@ img {
   height: 100%;
 }
 
+.tp-custom-donate-img img {
+  max-width: inherit;
+  margin-top: -60px;
+  margin-left: -85px;
+}
+.tp-custom-donate-bg {
+  margin-right: -244px;
+}
+.tp-custom-donate-form {
+  padding-right: 50px;
+}
+.tp-custom-donate-input input {
+  width: 100%;
+  height: 70px;
+  background: #fff;
+  padding: 0 50px;
+  font-size: 24px;
+  border-radius: 12px;
+  border: none;
+  color: #121018;
+}
+.tp-custom-donate-input input::-webkit-input-placeholder {
+  font-size: 24px;
+  color: rgba(18, 16, 24, 0.3);
+}
+.tp-custom-donate-input input:-moz-placeholder {
+  font-size: 24px;
+  color: rgba(18, 16, 24, 0.3);
+}
+.tp-custom-donate-input input::-moz-placeholder {
+  font-size: 24px;
+  color: rgba(18, 16, 24, 0.3);
+}
+.tp-custom-donate-input input:-ms-input-placeholder {
+  font-size: 24px;
+  color: rgba(18, 16, 24, 0.3);
+}
+.tp-custom-donate-input label {
+  position: absolute;
+  transform: translateY(-50%);
+  left: 20px;
+  top: 50%;
+  font-size: 26px;
+  color: #121018;
+  font-family: var(--tp-font-heading-2);
+}
+.tp-custom-donate-button button {
+  border: 1px solid rgba(18, 16, 24, 0.1);
+  background: rgba(18, 16, 24, 0.06);
+  padding: 2px 14px;
+  border-radius: 6px;
+  font-size: 14px;
+  color: #121018;
+  font-weight: 600;
+  text-transform: uppercase;
+}
 .tp-step {
   position: relative;
 }
